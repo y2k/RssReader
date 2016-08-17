@@ -8,10 +8,10 @@ import org.jsoup.Jsoup
  * Created by y2k on 17/08/16.
  */
 
-fun getRssItems(loadRss: (String) -> Single<String>): Observable<RssItems> {
-    return loadRss("https://blog.jetbrains.com/feed/")
+fun syncRssWithWeb(loadRss: (String) -> Single<String>, saveToRepo: (RssItems) -> Unit) {
+    loadRss("https://blog.jetbrains.com/feed/")
         .map(::parse)
-        .toObservable()
+        .subscribe { it: RssItems -> saveToRepo(it) }
 }
 
 private fun parse(rss: String): List<RssItem> {
@@ -22,4 +22,8 @@ private fun parse(rss: String): List<RssItem> {
                 it.select("title").text(),
                 it.select("description").text())
         }
+}
+
+fun getRssItems(loadFromRepo: () -> RssItems): Observable<RssItems> {
+    return Observable.just(loadFromRepo())
 }

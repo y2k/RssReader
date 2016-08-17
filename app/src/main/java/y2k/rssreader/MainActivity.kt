@@ -6,12 +6,14 @@ import y2k.rssreader.components.RssComponent
 
 class MainActivity : AppCompatActivity() {
 
+    val list by lazy { findViewById(R.id.list) as RssComponent }
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val list = findViewById(R.id.list) as RssComponent
         list.setDataSource(getDataSource())
+        syncRssWithWeb()
     }
 
     private fun getDataSource() = getRssItems(::loadResourceFromWeb)
