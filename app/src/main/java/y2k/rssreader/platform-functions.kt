@@ -14,13 +14,7 @@ fun loadResourceFromWeb(url: String): Single<String> = doAsync { URL(url).readTe
 
 private fun <T> doAsync(action: () -> T): Single<T> {
     return Single
-        .create<T> { subscriber ->
-            try {
-                subscriber.onSuccess(action())
-            } catch (e: Exception) {
-                subscriber.onError(e)
-            }
-        }
+        .fromCallable(action)
         .subscribeOn(Schedulers.io())
         .observeOn(FOREGROUND_SCHEDULER)
 }
