@@ -10,14 +10,15 @@ import org.jsoup.Jsoup
 
 fun getRssItems(loadRss: (String) -> Single<String>): Observable<RssItems> {
     return loadRss("https://blog.jetbrains.com/feed/")
+        .map { parse(it) }.toObservable()
+}
+
+private fun parse(rss: String): List<RssItem> {
+    return Jsoup.parse(rss)
+        .select("item")
         .map {
-            Jsoup.parse(it)
-                .select("item")
-                .map {
-                    RssItem(
-                        it.select("title").text(),
-                        it.select("description").text())
-                }
+            RssItem(
+                it.select("title").text(),
+                it.select("description").text())
         }
-        .toObservable()
 }

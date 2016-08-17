@@ -11,6 +11,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val list = findViewById(R.id.list) as RssComponent
-        list.setDataSource(getRssItems(::loadResourceFromWeb))
+        list.setDataSource(getDataSource())
     }
+
+    private fun getDataSource() = getRssItems(::loadResourceFromWeb)
 }
