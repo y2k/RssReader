@@ -29,9 +29,9 @@ class RssComponent(context: Context?, attrs: AttributeSet?) : ListView(context, 
                     return v
                 }
 
+                override fun getItemId(index: Int): Long = index.toLong()
                 override fun getCount(): Int = items.size
-                override fun getItem(p0: Int): Any = TODO()
-                override fun getItemId(p0: Int): Long = TODO()
+                override fun getItem(index: Int): Any = TODO()
             }
         }
     }
