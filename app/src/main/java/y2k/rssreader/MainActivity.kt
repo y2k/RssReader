@@ -12,9 +12,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        list.setDataSource(getDataSource())
-        syncRssWithWeb()
+        list.setDataSource(dataSource)
+        syncRss()
     }
 
-    private fun getDataSource() = getRssItems(::loadResourceFromWeb)
+    private val dataSource = getRssItems(::loadFromRepo)
+    private val syncRss = { syncRssWithWeb(::loadResourceFromWeb, ::saveToRepo) }
 }
