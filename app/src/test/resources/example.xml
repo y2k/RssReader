@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Company Blog</title>
+	<atom:link href="https://blog.jetbrains.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://blog.jetbrains.com</link>
+	<description></description>
+	<lastBuildDate>Fri, 05 Aug 2016 10:06:17 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.4</generator>
+	<item>
+		<title>Meet JetBrains at GDC Europe 2016</title>
+		<link>https://blog.jetbrains.com/blog/2016/08/05/meet-jetbrains-at-gdc-europe-2016/</link>
+		<comments>https://blog.jetbrains.com/blog/2016/08/05/meet-jetbrains-at-gdc-europe-2016/#respond</comments>
+		<pubDate>Fri, 05 Aug 2016 10:06:17 +0000</pubDate>
+		<dc:creator><![CDATA[Anastasia Kazakova]]></dc:creator>
+				<category><![CDATA[Events]]></category>
+		<category><![CDATA[exhibition]]></category>
+		<category><![CDATA[Game]]></category>
+
+		<guid isPermaLink="false">http://blog.jetbrains.com/?p=7673</guid>
+		<description><![CDATA[Cologne, Germany welcomes the world famous Game Development Conference again this August. In just 10 days hundreds of professionals from the gaming industry will meet at the biggest European event in this area. JetBrains will join with ReSharper, Rider, CLion &#8230; <a href="https://blog.jetbrains.com/blog/2016/08/05/meet-jetbrains-at-gdc-europe-2016/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+		<wfw:commentRss>https://blog.jetbrains.com/blog/2016/08/05/meet-jetbrains-at-gdc-europe-2016/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+		</item>
+		<item>
+		<title>Introducing JetBrains Toolbox App</title>
+		<link>https://blog.jetbrains.com/blog/2016/05/25/introducing-jetbrains-toolbox-app/</link>
+		<comments>https://blog.jetbrains.com/blog/2016/05/25/introducing-jetbrains-toolbox-app/#comments</comments>
+		<pubDate>Wed, 25 May 2016 09:00:07 +0000</pubDate>
+		<dc:creator><![CDATA[Konstantin Bulenkov]]></dc:creator>
+				<category><![CDATA[FYI]]></category>
+		<category><![CDATA[New Products]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[hackathon]]></category>
+		<category><![CDATA[JetBrains Toolbox]]></category>
+		<category><![CDATA[launcher]]></category>
+
+		<guid isPermaLink="false">http://blog.jetbrains.com/?p=7642</guid>
+		<description><![CDATA[Last summer we held our third annual two-day hackathon, an event where anyone and everyone from JetBrains (as well as a few external contributors) gathered to work on a novel, high-impact idea. The JetBrains App Launcher was one of these &#8230; <a href="https://blog.jetbrains.com/blog/2016/05/25/introducing-jetbrains-toolbox-app/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+		<wfw:commentRss>https://blog.jetbrains.com/blog/2016/05/25/introducing-jetbrains-toolbox-app/feed/</wfw:commentRss>
+		<slash:comments>43</slash:comments>
+	<custom_fields><aFhfc_head_code></aFhfc_head_code><aFhfc_footer_code></aFhfc_footer_code></custom_fields>	</item>
+		<item>
+		<title>Issue Tracking Tools Survey</title>
+		<link>https://blog.jetbrains.com/blog/2016/05/17/issue-tracking-tools-survey/</link>
+		<comments>https://blog.jetbrains.com/blog/2016/05/17/issue-tracking-tools-survey/#comments</comments>
+		<pubDate>Tue, 17 May 2016 11:08:02 +0000</pubDate>
+		<dc:creator><![CDATA[Valerie Andrianova]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[issue tracking tools]]></category>
+		<category><![CDATA[survey]]></category>
+
+		<guid isPermaLink="false">http://blog.jetbrains.com/?p=7621</guid>
+		<description><![CDATA[Dear Developers and Development Teams, We want to know what you think! We are conducting a study to learn more about the Issue Tracking tools that professionals use in their work process, and would very much appreciate your input. As &#8230; <a href="https://blog.jetbrains.com/blog/2016/05/17/issue-tracking-tools-survey/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+		<wfw:commentRss>https://blog.jetbrains.com/blog/2016/05/17/issue-tracking-tools-survey/feed/</wfw:commentRss>
+		<slash:comments>7</slash:comments>
+	<custom_fields><aFhfc_head_code></aFhfc_head_code><aFhfc_footer_code></aFhfc_footer_code></custom_fields>	</item>
+		<item>
+		<title>Security update for IntelliJ-based IDEs v2016.1 and older versions</title>
+		<link>https://blog.jetbrains.com/blog/2016/05/11/security-update-for-intellij-based-ides-v2016-1-and-older-versions/</link>
+		<comments>https://blog.jetbrains.com/blog/2016/05/11/security-update-for-intellij-based-ides-v2016-1-and-older-versions/#comments</comments>
+		<pubDate>Wed, 11 May 2016 13:06:07 +0000</pubDate>
+		<dc:creator><![CDATA[Eugene Toporov]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://blog.jetbrains.com/?p=7580</guid>
+		<description><![CDATA[We have just released an important update for all IntelliJ-based IDEs. This update addresses critical security vulnerabilities inside the underlying IntelliJ Platform. The vulnerabilities, in various forms, are also present in older versions of the IDEs; therefore, patches for those &#8230; <a href="https://blog.jetbrains.com/blog/2016/05/11/security-update-for-intellij-based-ides-v2016-1-and-older-versions/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+		<wfw:commentRss>https://blog.jetbrains.com/blog/2016/05/11/security-update-for-intellij-based-ides-v2016-1-and-older-versions/feed/</wfw:commentRss>
+		<slash:comments>289</slash:comments>
+	<custom_fields><aFhfc_head_code></aFhfc_head_code><aFhfc_footer_code></aFhfc_footer_code></custom_fields>	</item>
+		<item>
+		<title>JetBrains Toolbox 2016.1 release is complete</title>
+		<link>https://blog.jetbrains.com/blog/2016/04/28/jetbrains-toolbox-2016-1-release-is-complete/</link>
+		<comments>https://blog.jetbrains.com/blog/2016/04/28/jetbrains-toolbox-2016-1-release-is-complete/#comments</comments>
+		<pubDate>Thu, 28 Apr 2016 14:42:09 +0000</pubDate>
+		<dc:creator><![CDATA[Eugene Toporov]]></dc:creator>
+				<category><![CDATA[New Products]]></category>
+		<category><![CDATA[News]]></category>
+		<category><![CDATA[JetBrains Toolbox]]></category>
+
+		<guid isPermaLink="false">http://blog.jetbrains.com/?p=7562</guid>
+		<description><![CDATA[We usually say a release is ‘available’ but ‘complete’ seems more appropriate for 2016.1. It took a whole month and many teams working together to publish all of the 2016.1 updates inside of JetBrains Toolbox. Here’s a short recap of &#8230; <a href="https://blog.jetbrains.com/blog/2016/04/28/jetbrains-toolbox-2016-1-release-is-complete/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+		<wfw:commentRss>https://blog.jetbrains.com/blog/2016/04/28/jetbrains-toolbox-2016-1-release-is-complete/feed/</wfw:commentRss>
+		<slash:comments>10</slash:comments>
+	<custom_fields><aFhfc_head_code></aFhfc_head_code><aFhfc_footer_code></aFhfc_footer_code></custom_fields>	</item>
+		<item>
+		<title>JetBrains Toolbox—Release and Versioning Changes</title>
+		<link>https://blog.jetbrains.com/blog/2016/03/09/jetbrains-toolbox-release-and-versioning-changes/</link>
+		<comments>https://blog.jetbrains.com/blog/2016/03/09/jetbrains-toolbox-release-and-versioning-changes/#comments</comments>
+		<pubDate>Wed, 09 Mar 2016 13:00:57 +0000</pubDate>
+		<dc:creator><![CDATA[Eugene Toporov]]></dc:creator>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[JetBrains Toolbox]]></category>
+
+		<guid isPermaLink="false">http://blog.jetbrains.com/?p=7523</guid>
+		<description><![CDATA[With the shift to subscriptions, one of our goals was to move away from the one major release per year model, focusing on continuously delivering value independently of versioning. On changing to this model, a question that came up was, &#8230; <a href="https://blog.jetbrains.com/blog/2016/03/09/jetbrains-toolbox-release-and-versioning-changes/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+		<wfw:commentRss>https://blog.jetbrains.com/blog/2016/03/09/jetbrains-toolbox-release-and-versioning-changes/feed/</wfw:commentRss>
+		<slash:comments>92</slash:comments>
+	<custom_fields><aFhfc_head_code></aFhfc_head_code><aFhfc_footer_code></aFhfc_footer_code></custom_fields>	</item>
+		<item>
+		<title>Mobile app development survey</title>
+		<link>https://blog.jetbrains.com/blog/2016/02/22/mobile-app-development-survey/</link>
+		<comments>https://blog.jetbrains.com/blog/2016/02/22/mobile-app-development-survey/#comments</comments>
+		<pubDate>Mon, 22 Feb 2016 10:59:07 +0000</pubDate>
+		<dc:creator><![CDATA[Jura Gorohovsky]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+		<category><![CDATA[survey]]></category>
+
+		<guid isPermaLink="false">http://blog.jetbrains.com/?p=7513</guid>
+		<description><![CDATA[As mobile development is growing and a lot of JetBrains tools get increasingly exposed to mobile developers, we are looking to adapt and ensure the best experience. However, most of us are not particularly experienced in mobile development tech, which &#8230; <a href="https://blog.jetbrains.com/blog/2016/02/22/mobile-app-development-survey/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+		<wfw:commentRss>https://blog.jetbrains.com/blog/2016/02/22/mobile-app-development-survey/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+	<custom_fields><aFhfc_head_code></aFhfc_head_code><aFhfc_footer_code></aFhfc_footer_code></custom_fields>	</item>
+		<item>
+		<title>JetBrains Student Program: How to Renew &#038; Graduation Discount</title>
+		<link>https://blog.jetbrains.com/blog/2015/12/11/jetbrains-student-program-how-to-renew-graduation-discount/</link>
+		<comments>https://blog.jetbrains.com/blog/2015/12/11/jetbrains-student-program-how-to-renew-graduation-discount/#comments</comments>
+		<pubDate>Fri, 11 Dec 2015 13:29:48 +0000</pubDate>
+		<dc:creator><![CDATA[Mikhail Vink]]></dc:creator>
+				<category><![CDATA[News]]></category>
+		<category><![CDATA[discount]]></category>
+		<category><![CDATA[graduation]]></category>
+		<category><![CDATA[student]]></category>
+		<category><![CDATA[student license]]></category>
+		<category><![CDATA[Student License Program]]></category>
+
+		<guid isPermaLink="false">http://blog.jetbrains.com/?p=7443</guid>
+		<description><![CDATA[It’s been a bit more than a year since we first launched our free Student License Program, and today we are really pleased that more than 230,000 students worldwide have made the choice to use JetBrains tools for educational purposes. &#8230; <a href="https://blog.jetbrains.com/blog/2015/12/11/jetbrains-student-program-how-to-renew-graduation-discount/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+		<wfw:commentRss>https://blog.jetbrains.com/blog/2015/12/11/jetbrains-student-program-how-to-renew-graduation-discount/feed/</wfw:commentRss>
+		<slash:comments>13</slash:comments>
+		</item>
+		<item>
+		<title>The Drive To Develop</title>
+		<link>https://blog.jetbrains.com/blog/2015/12/10/the-drive-to-develop/</link>
+		<comments>https://blog.jetbrains.com/blog/2015/12/10/the-drive-to-develop/#comments</comments>
+		<pubDate>Thu, 10 Dec 2015 11:19:08 +0000</pubDate>
+		<dc:creator><![CDATA[Eugene Toporov]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://blog.jetbrains.com/?p=7452</guid>
+		<description><![CDATA[In 2000, three friends set out to make their work easier by creating a tool that would remove mundane and somewhat inefficient tasks. This tool was called Renamer, and it had one job which was to rename things, a process &#8230; <a href="https://blog.jetbrains.com/blog/2015/12/10/the-drive-to-develop/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+		<wfw:commentRss>https://blog.jetbrains.com/blog/2015/12/10/the-drive-to-develop/feed/</wfw:commentRss>
+		<slash:comments>204</slash:comments>
+	<custom_fields><aFhfc_head_code></aFhfc_head_code><aFhfc_footer_code></aFhfc_footer_code></custom_fields>	</item>
+		<item>
+		<title>Meet Us at Apps World in London, November 18-19th</title>
+		<link>https://blog.jetbrains.com/blog/2015/11/06/meet-us-at-apps-world-in-london/</link>
+		<comments>https://blog.jetbrains.com/blog/2015/11/06/meet-us-at-apps-world-in-london/#comments</comments>
+		<pubDate>Fri, 06 Nov 2015 11:57:18 +0000</pubDate>
+		<dc:creator><![CDATA[Anastasia Kazakova]]></dc:creator>
+				<category><![CDATA[Events]]></category>
+		<category><![CDATA[Apps World]]></category>
+		<category><![CDATA[london]]></category>
+
+		<guid isPermaLink="false">http://blog.jetbrains.com/?p=7418</guid>
+		<description><![CDATA[The Apps World event returns to Excel, London. A leading multi-platform event in the app industry, Apps World features 350 exhibitors and is expected to attract 10,000+ attendees. With 52% of Apps World attendees being developers, this is the place &#8230; <a href="https://blog.jetbrains.com/blog/2015/11/06/meet-us-at-apps-world-in-london/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+		<wfw:commentRss>https://blog.jetbrains.com/blog/2015/11/06/meet-us-at-apps-world-in-london/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		</item>
+	</channel>
+</rss>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced
+Content Delivery Network via Amazon Web Services: CloudFront: d3nmt5vlzunoa1.cloudfront.net
+
+ Served from: blog.jetbrains.com @ 2016-08-17 08:41:12 by W3 Total Cache -->

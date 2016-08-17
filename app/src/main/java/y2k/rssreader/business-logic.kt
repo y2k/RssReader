@@ -8,9 +8,16 @@ import org.jsoup.Jsoup
  * Created by y2k on 17/08/16.
  */
 
-// https://blog.jetbrains.com/kotlin/comments/feed/
 fun getRssItems(loadRss: (String) -> Single<String>): Observable<RssItems> {
-    return loadRss("https://blog.jetbrains.com/kotlin/comments/feed/")
-        .map { Jsoup.parse(it).select("item").map { RssItem("") } }
+    return loadRss("https://blog.jetbrains.com/feed/")
+        .map {
+            Jsoup.parse(it)
+                .select("item")
+                .map {
+                    RssItem(
+                        it.select("title").text(),
+                        it.select("description").text())
+                }
+        }
         .toObservable()
 }

@@ -2,6 +2,7 @@ package y2k.rssreader
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import y2k.rssreader.components.RssComponent
 
 class MainActivity : AppCompatActivity() {
 
@@ -9,7 +10,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-//        val list = findViewById(R.id.list) as RssList
-//        list.setDataSource(getRssItems())
+        val list = findViewById(R.id.list) as RssComponent
+        list.setDataSource(getRssItems(::loadResourceFromWeb))
     }
 }
