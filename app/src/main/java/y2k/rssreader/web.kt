@@ -30,5 +30,7 @@ private fun <T> doAsync(action: () -> T): Single<T> {
         .observeOn(FOREGROUND_SCHEDULER)
 }
 
-private val FOREGROUND_SCHEDULER = Handler(Looper.getMainLooper())
-    .let { h -> Schedulers.from { h.post(it) } }
+private val FOREGROUND_SCHEDULER by lazy {
+    Handler(Looper.getMainLooper())
+        .let { h -> Schedulers.from { h.post(it) } }
+}
