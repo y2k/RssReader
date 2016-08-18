@@ -1,5 +1,6 @@
 package y2k.rssreader
 
+import io.reactivex.Completable
 import io.reactivex.Single
 import org.junit.Assert.assertArrayEquals
 import org.junit.Test
@@ -60,7 +61,7 @@ class Tests {
                 "Introducing JetBrains Toolbox App",
                 "Last summer we held our third annual two-day hackathon, an event where anyone and everyone from JetBrains (as well as a few external contributors) gathered to work on a novel, high-impact idea. The JetBrains App Launcher was one of these &#8230; <a href=\"https://blog.jetbrains.com/blog/2016/05/25/introducing-jetbrains-toolbox-app/\">Continue reading <span class=\"meta-nav\">&#8594;</span></a>")
         )
-        val actual = getRssItems({}, { expected }).get()
+        val actual = getRssItems({ Completable.complete() }, { expected }).get()
 
         assertArrayEquals(
             expected.toTypedArray(),

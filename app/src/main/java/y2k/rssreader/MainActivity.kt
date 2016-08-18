@@ -2,8 +2,6 @@ package y2k.rssreader
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
-import io.reactivex.Observable
-import io.reactivex.Single
 import y2k.rssreader.components.RssComponent
 
 class MainActivity : AppCompatActivity() {
@@ -15,6 +13,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val getDataSource = Provider.provideGetDataSource()
-        list.setDataSource(getDataSource())
+        list.initialize(getDataSource())
     }
 }

@@ -17,7 +17,7 @@ import y2k.rssreader.RssItems
 @Suppress("DEPRECATION")
 class RssComponent(context: Context?, attrs: AttributeSet?) : ListView(context, attrs) {
 
-    fun setDataSource(items: Observable<RssItems>) {
+    fun initialize(items: Observable<RssItems>) {
         items.subscribe { items ->
             adapter = object : BaseAdapter() {
 

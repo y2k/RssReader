@@ -2,6 +2,7 @@ package y2k.rssreader
 
 import android.os.Handler
 import android.os.Looper
+import io.reactivex.Completable
 import io.reactivex.Observable
 import io.reactivex.Single
 import io.reactivex.schedulers.Schedulers
@@ -13,7 +14,7 @@ import io.reactivex.schedulers.Schedulers
 object Provider {
 
     fun provideGetDataSource(): () -> Observable<List<RssItem>> = { getRssItems(provideSync(), ::loadFromRepo) }
-    fun provideSync(): () -> Unit = { syncRssWithWeb(provideLoadFromWeb(), ::saveToRepo) }
+    fun provideSync(): () -> Completable = { syncRssWithWeb(provideLoadFromWeb(), ::saveToRepo) }
     fun provideLoadFromWeb(): (String) -> Single<String> = { loadFromWebCached(it, ::loadFromWeb, ::loadDateFromRepo, ::saveDateToRepo) }
 }
 
