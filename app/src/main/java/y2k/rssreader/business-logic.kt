@@ -3,8 +3,8 @@ package y2k.rssreader
 import io.reactivex.Completable
 import io.reactivex.Observable
 import io.reactivex.Single
-import io.reactivex.subjects.BehaviorSubject
 import io.reactivex.subjects.PublishSubject
+import io.reactivex.subjects.ReplaySubject
 import org.jsoup.Jsoup
 
 /**
@@ -12,10 +12,11 @@ import org.jsoup.Jsoup
  */
 
 fun getRssItems(syncRssWithWeb: () -> Completable, loadFromRepo: () -> RssItems): Observable<RssItems> {
-    val subject = BehaviorSubject.createDefault(loadFromRepo())
+    val subject = ReplaySubject.create<RssItems>()
+    subject.onNext(loadFromRepo())
     syncRssWithWeb()
         .subscribe({
-            subject.onNext(y2k.rssreader.loadFromRepo())
+            subject.onNext(loadFromRepo())
             subject.onComplete()
         }, {
             it.printStackTrace()

@@ -14,7 +14,7 @@ fun loadFromWebCached(
     getCached: (String) -> Date,
     setCached: (String, Date) -> Unit): Single<String> {
     val expire = Date().time - getCached(url).time
-    return if (expire < 60 * 1000) Single.error(Exception())
+    return if (expire < 60 * 1000) Single.error(IllegalStateException("Cache not expired")) // TODO:
     else loadFromWeb(url).doOnSuccess { setCached(url, Date()) }
 }
 
