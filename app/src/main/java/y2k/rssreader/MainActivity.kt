@@ -14,11 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val getDataSource = provideGetDataSource()
+        val getDataSource = Provider.provideGetDataSource()
         list.setDataSource(getDataSource())
     }
 }
-
-fun provideGetDataSource(): () -> Observable<List<RssItem>> = { getRssItems(provideSync(), ::loadFromRepo) }
-fun provideSync(): () -> Unit = { syncRssWithWeb(provideLoadFromWeb(), ::saveToRepo) }
-fun provideLoadFromWeb(): (String) -> Single<String> = { loadFromWebCached(it, ::loadFromWeb, ::loadDateFromRepo, ::saveDateToRepo) }
