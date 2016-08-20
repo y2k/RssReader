@@ -1,6 +1,6 @@
 package y2k.rssreader
 
-import io.reactivex.Single
+import rx.Single
 import java.net.URL
 import java.util.*
 

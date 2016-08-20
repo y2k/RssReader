@@ -2,10 +2,10 @@ package y2k.rssreader
 
 import android.os.Handler
 import android.os.Looper
-import io.reactivex.Completable
-import io.reactivex.Observable
-import io.reactivex.Single
-import io.reactivex.schedulers.Schedulers
+import rx.Completable
+import rx.Observable
+import rx.Single
+import rx.schedulers.Schedulers
 
 /**
  * Created by y2k on 18/08/16.

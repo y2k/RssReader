@@ -1,9 +1,9 @@
 package y2k.rssreader
 
-import io.reactivex.Completable
-import io.reactivex.Single
 import org.junit.Assert.assertArrayEquals
 import org.junit.Test
+import rx.Completable
+import rx.Single
 
 /**
  * Created by y2k on 17/08/16.

@@ -1,26 +1,26 @@
 package y2k.rssreader
 
-import io.reactivex.Completable
-import io.reactivex.Observable
-import io.reactivex.Single
-import io.reactivex.subjects.PublishSubject
-import io.reactivex.subjects.ReplaySubject
 import org.jsoup.Jsoup
+import rx.Completable
+import rx.Observable
+import rx.Single
+import rx.subjects.PublishSubject
+import rx.subjects.ReplaySubject
 
 /**
  * Created by y2k on 17/08/16.
  */
 
 fun getRssItems(syncRssWithWeb: () -> Completable, loadFromRepo: () -> RssItems): Observable<RssItems> {
-    val subject = ReplaySubject.create<RssItems>()
+    val subject = ReplaySubject.createWithSize<RssItems>(1)
     subject.onNext(loadFromRepo())
     syncRssWithWeb()
         .subscribe({
             subject.onNext(loadFromRepo())
-            subject.onComplete()
+            subject.onCompleted()
         }, {
             it.printStackTrace()
-            subject.onComplete()
+            subject.onCompleted()
         })
     return subject
 }
@@ -31,7 +31,7 @@ fun syncRssWithWeb(loadRss: (String) -> Single<String>, saveToRepo: (RssItems) -
         .map(::parse)
         .doOnSuccess { saveToRepo(it) }
         .subscribe(
-            { subject.onComplete() },
+            { subject.onCompleted() },
             { subject.onError(it) })
     return subject.toCompletable()
 }

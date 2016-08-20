@@ -1,8 +1,8 @@
 package y2k.rssreader
 
-import io.reactivex.Single
 import org.junit.Assert.assertEquals
 import org.junit.Test
+import rx.Single
 import java.util.*
 
 /**
@@ -17,9 +17,9 @@ class WebTests {
             return loadFromWebCached("", { Single.just("data") }, { date }, { url, data -> })
         }
 
-        assertEquals("data", load(Date(0L)).blockingGet())
-        assertEquals("data", load(Date().offset(-70 * 1000)).blockingGet())
-        assertEquals("error", load(Date().offset(-40 * 1000)).onErrorReturn { "error" }.blockingGet())
+        assertEquals("data", load(Date(0L)).get())
+        assertEquals("data", load(Date().offset(-70 * 1000)).get())
+        assertEquals("error", load(Date().offset(-40 * 1000)).onErrorReturn { "error" }.get())
     }
 
     private fun Date.offset(offset: Long) = Date(this.time + offset)

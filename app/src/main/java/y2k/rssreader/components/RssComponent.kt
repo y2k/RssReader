@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import android.widget.BaseAdapter
 import android.widget.ListView
 import android.widget.TextView
-import io.reactivex.Observable
+import rx.Observable
 import y2k.rssreader.RssItems
 
 /**
