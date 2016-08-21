@@ -18,4 +18,4 @@ fun loadFromWebCached(
     else loadFromWeb(url).doOnSuccess { setCached(url, Date()) }
 }
 
-fun loadFromWeb(url: String): Single<String> = doAsync { URL(url).readText() }
+fun loadFromWeb(url: String): Single<String> = runAsync { URL(url).readText() }
