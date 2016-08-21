@@ -14,7 +14,7 @@ class WebTests {
     @Test
     fun test() {
         fun load(date: Date): Single<String> {
-            return loadFromWebCached("", { Single.just("data") }, { date }, { url, data -> })
+            return loadFromWebCached({ Single.just("data") }, { date }, { url, data -> }, "")
         }
 
         assertEquals("data", load(Date(0L)).get())

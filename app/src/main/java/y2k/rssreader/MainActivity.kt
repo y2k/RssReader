@@ -1,12 +1,12 @@
 package y2k.rssreader
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
 import rx.Observable
+import rx.Subscription
 import rx.subjects.BehaviorSubject
 import y2k.rssreader.components.RssComponent
 
-class MainActivity : AppCompatActivity() {
+class MainActivity : BaseActivity() {
 
     val list by lazy { findViewById(R.id.list) as RssComponent }
 
@@ -15,22 +15,23 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val getDataSource = Provider.provideGetDataSource()
-        val dataSource = toLiveCycleObservable(getDataSource())
-        list.initialize(dataSource)
+        list.initialize(getDataSource().toLiveCycleObservable(this))
+    }
+}
+
+fun <T> Observable<T>.toLiveCycleObservable(activity: BaseActivity): Observable<T> {
+    val subject = BehaviorSubject.create<T>()
+    var subscription: Subscription? = null
+
+    activity.onResume.subscribe {
+        subscription = subscribe(
+            { subject.onNext(it) },
+            { subject.onError(it) },
+            { subject.onCompleted() })
+    }
+    activity.onPause.subscribe {
+        subscription?.unsubscribe()
     }
 
-    fun <T> toLiveCycleObservable(observable: Observable<T>): Observable<T> {
-
-        val subject = BehaviorSubject.create<T>()
-
-        TODO()
-    }
-
-    override fun onResume() {
-        super.onResume()
-    }
-
-    override fun onPause() {
-        super.onPause()
-    }
+    return subject
 }

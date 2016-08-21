@@ -9,10 +9,10 @@ import java.util.*
  */
 
 fun loadFromWebCached(
-    url: String,
     loadFromWeb: (String) -> Single<String>,
     getCached: (String) -> Date,
-    setCached: (String, Date) -> Unit): Single<String> {
+    setCached: (String, Date) -> Unit,
+    url: String): Single<String> {
     val expire = Date().time - getCached(url).time
     return if (expire < 60 * 1000) Single.error(IllegalStateException("Cache not expired")) // TODO:
     else loadFromWeb(url).doOnSuccess { setCached(url, Date()) }
