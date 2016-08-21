@@ -1,6 +1,7 @@
 package y2k.rssreader
 
 import android.os.Bundle
+import y2k.rssreader.Provider.getRssItems
 import y2k.rssreader.components.RssComponent
 import y2k.rssreader.components.SubscriptionComponent
 
@@ -13,9 +14,9 @@ class MainActivity : BaseActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val getDataSource = Provider.provideGetDataSource()
-        list.init(getDataSource().toLiveCycleObservable(this))
-
+        getRssItems()
+            .toLiveCycleObservable(this)
+            .let { list.init(it) }
         getSubscriptions()
             .toLiveCycleObservable(this)
             .let { subscriptions.init(it) }

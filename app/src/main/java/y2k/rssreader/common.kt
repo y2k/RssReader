@@ -18,7 +18,7 @@ import rx.subjects.PublishSubject
 
 object Provider {
 
-    fun provideGetDataSource(): () -> Observable<RssItems> = ::getRssItems.curried(provideSync(), ::loadFromRepo)
+    fun getRssItems(): Observable<RssItems> = getRssItems(provideSync(), ::loadFromRepo)
     fun provideSync(): () -> Completable = ::syncRssWithWeb.curried(provideLoadFromWeb(), ::saveToRepo)
     fun provideLoadFromWeb(): (String) -> Single<String> = ::loadFromWebCached.curried(::loadFromWeb, ::loadDateFromRepo, ::saveDateToRepo)
 }
