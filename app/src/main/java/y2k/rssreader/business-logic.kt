@@ -11,6 +11,9 @@ import rx.subjects.ReplaySubject
  * Created by y2k on 17/08/16.
  */
 
+fun getSubscriptions(): Observable<Subscriptions> =
+    Observable.just(listOf("JetBrains blog", "Kotlin blog").map { RssSubscription(it) })
+
 fun getRssItems(syncRssWithWeb: () -> Completable, loadFromRepo: () -> RssItems): Observable<RssItems> {
     val subject = ReplaySubject.createWithSize<RssItems>(1)
     subject.onNext(loadFromRepo())

@@ -11,6 +11,14 @@ import rx.Single
 
 class Tests {
 
+    @Test fun `get subscriptions`() {
+        assertArrayEquals(
+            arrayOf(
+                RssSubscription("JetBrains blog"),
+                RssSubscription("Kotlin blog")),
+            getSubscriptions().get().toTypedArray())
+    }
+
     @Test fun syncTest() {
         var actual = emptyList<RssItem>()
         syncRssWithWeb(

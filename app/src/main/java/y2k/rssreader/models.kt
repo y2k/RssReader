@@ -7,3 +7,7 @@ package y2k.rssreader
 data class RssItem(val title: String, val description: String)
 
 typealias RssItems = List<RssItem>
+
+data class RssSubscription(val title: String)
+
+typealias Subscriptions = List<RssSubscription>

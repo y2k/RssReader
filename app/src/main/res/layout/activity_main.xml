@@ -6,8 +6,20 @@
     android:layout_height="match_parent"
     tools:context="y2k.rssreader.MainActivity">
 
-    <y2k.rssreader.components.RssComponent
-        android:id="@+id/list"
+    <android.support.v4.widget.DrawerLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="match_parent">
+
+        <y2k.rssreader.components.RssComponent
+            android:id="@+id/list"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <y2k.rssreader.components.SubscriptionComponent
+            android:id="@+id/subscriptions"
+            android:background="?android:colorBackground"
+            android:layout_gravity="left"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"/>
+    </android.support.v4.widget.DrawerLayout>
 </FrameLayout>
