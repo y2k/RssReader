@@ -8,6 +8,6 @@ data class RssItem(val title: String, val description: String)
 
 typealias RssItems = List<RssItem>
 
-data class RssSubscription(val title: String)
+data class RssSubscription(val title: String, val url: String)
 
 typealias Subscriptions = List<RssSubscription>

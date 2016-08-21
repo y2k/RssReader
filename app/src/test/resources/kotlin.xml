@@ -1,0 +1,566 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" media="screen" href="/~d/styles/rss2full.xsl"?><?xml-stylesheet type="text/css" media="screen" href="http://feeds.feedburner.com/~d/styles/itemcontent.css"?><rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:wfw="http://wellformedweb.org/CommentAPI/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:sy="http://purl.org/rss/1.0/modules/syndication/" xmlns:slash="http://purl.org/rss/1.0/modules/slash/" xmlns:feedburner="http://rssnamespace.org/feedburner/ext/1.0" version="2.0">
+
+<channel>
+	<title>Kotlin Blog</title>
+	
+	<link>https://blog.jetbrains.com/kotlin</link>
+	<description>Kotlin — programming language for the JVM by JetBrains</description>
+	<lastBuildDate>Thu, 04 Aug 2016 18:33:13 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.4.4</generator>
+	<atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="self" type="application/rss+xml" href="http://feeds.feedburner.com/kotlin" /><feedburner:info uri="kotlin" /><atom10:link xmlns:atom10="http://www.w3.org/2005/Atom" rel="hub" href="http://pubsubhubbub.appspot.com/" /><item>
+		<title>Calling on EAPers</title>
+		<link>http://feedproxy.google.com/~r/kotlin/~3/zQoInF7SWWI/</link>
+		<comments>https://blog.jetbrains.com/kotlin/2016/08/calling-on-eapers/#comments</comments>
+		<pubDate>Thu, 04 Aug 2016 17:44:57 +0000</pubDate>
+		<dc:creator><![CDATA[Roman Belov]]></dc:creator>
+				<category><![CDATA[Uncategorized]]></category>
+
+		<guid isPermaLink="false">http://blog.jetbrains.com/kotlin/?p=4125</guid>
+		<description><![CDATA[At JetBrains we&#8217;ve always believed in our Early Access Program for our tools, giving developers a chance to use the latest features or fixes as soon as they&#8217;re ready. We&#8217;ve followed the same philosophy with Kotlin, knowing of course that &#8230; <a href="https://blog.jetbrains.com/kotlin/2016/08/calling-on-eapers/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>At JetBrains we&#8217;ve always believed in our Early Access Program for our tools, giving developers a chance to use the latest features or fixes as soon as they&#8217;re ready. We&#8217;ve followed the same philosophy with Kotlin, knowing of course that with a language, some decisions can haunt you for life.</p>
+<p>That is why during the pre-release days of Kotlin, we&#8217;d have milestone releases with features and important changes for our early adopters (including ourselves at JetBrains), collect feedback on whether things were working as designed. This release-feedback-adjust cycle has proven invaluable in so many occasions and has definitely helped shape Kotlin 1.0.</p>
+<p>But it&#8217;s not over with the release. We&#8217;re still continuing to develop Kotlin with new language features and we need your continued support. As you know, we have two &#8216;branches&#8217; of EAP&#8217;s, the 1.0.X ones which are more about bug fixes and tooling, and the 1.1 EAP which is about language changes. And it&#8217;s with these EAP&#8217;s, the ones with language changes, where we could really use your help. While we don&#8217;t recommend you using these 1.1 EAP&#8217;s in production code, we definitely do need you to give us feedback. In return, we promise to listen to everything you have to say!</p>
+<h2>Using EAP&#8217;s</h2>
+<p>The easiest way to access EAP&#8217;s is via the Tools menu. Open <em>Tools | Kotlin | Configure Kotlin Plugin Updates</em> in the main menu, select Early Access Preview channel 1.0.x or 1.1 and press the <em>Check for updates now</em> button.<br />
+<img src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2016/08/Screen-Shot-2016-08-01-at-17.55.03.png?w=640&#038;ssl=1" alt="Screen Shot 2016-08-01 at 17.55.03" class="alignnone size-full wp-image-4126" data-recalc-dims="1" /><br />
+To use the new builds from Maven or Gradle: add <em>https://dl.bintray.com/kotlin/kotlin-eap</em> or <em>https://dl.bintray.com/kotlin/kotlin-eap-1.1</em> as a repository to your project</p>
+<p><em>At the moment the first EAP of Kotlin 1.1 is available (with <a href="https://youtu.be/4W3ruTWUhpw">coroutines</a>, type aliases, bound callable reference, local delegated properties, Java 7/8 support and <a href="https://blog.jetbrains.com/kotlin/2016/07/first-glimpse-of-kotlin-1-1-coroutines-type-aliases-and-more/">many more</a>). Also today we just published first EAP build of Kotlin 1.0.4 with lots of bugs fixes in the compiler and IDE, whole bunch of new intentions, inspections and quickfixes, and it&#8217;s now fully compatible with Gradle 2.14.1. For more information check out <a href="https://github.com/JetBrains/kotlin/blob/767329fcab8249214c9c77db8ff1b8c1b3bd44b9/ChangeLog.md">the full Kotlin 1.0.4 changelog</a></em></p>
+<h2>Giving Feedback</h2>
+<p>Most of the Kotlin team are available on our public (<a href="http://kotlinslackin.herokuapp.com">Slack community</a>), and specifically on the #eap channel, where we&#8217;re very eager to listen to your feedback and help with any questions or issues you may have. Of course, our <a href="http://kotl.in/issue">issue tracker</a> is always open too</p>
+<p>One of our main goals with Kotlin has always been to make it an industrial language that is pragmatic. And it&#8217;s by using Kotlin in many types of applications and scenarios that will help us achieve this goal. For this, we continue to need your help!</p>
+<p>Thank you and let&#8217;s Kotlin!</p>
+<img src="http://feeds.feedburner.com/~r/kotlin/~4/zQoInF7SWWI" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>https://blog.jetbrains.com/kotlin/2016/08/calling-on-eapers/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		<feedburner:origLink>https://blog.jetbrains.com/kotlin/2016/08/calling-on-eapers/</feedburner:origLink></item>
+		<item>
+		<title>First glimpse of Kotlin 1.1: Coroutines, Type aliases and more</title>
+		<link>http://feedproxy.google.com/~r/kotlin/~3/nqFzPzu71v4/</link>
+		<comments>https://blog.jetbrains.com/kotlin/2016/07/first-glimpse-of-kotlin-1-1-coroutines-type-aliases-and-more/#comments</comments>
+		<pubDate>Thu, 14 Jul 2016 15:01:14 +0000</pubDate>
+		<dc:creator><![CDATA[Andrey Breslav]]></dc:creator>
+				<category><![CDATA[Releases]]></category>
+
+		<guid isPermaLink="false">http://blog.jetbrains.com/kotlin/?p=4080</guid>
+		<description><![CDATA[While Kotlin 1.0.X releases keep delivering incremental updates and tooling features, we are working on the new language features in Kotlin 1.1. Today we are presenting the first preview version of 1.1, it&#8217;s far from Beta, but the brave and &#8230; <a href="https://blog.jetbrains.com/kotlin/2016/07/first-glimpse-of-kotlin-1-1-coroutines-type-aliases-and-more/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>While Kotlin 1.0.X releases keep delivering incremental updates and tooling features, we are working on the new language features in Kotlin 1.1. Today we are presenting the first preview version of 1.1, it&#8217;s far from Beta, but the brave and curious ones can play with new  exciting things (and hopefully give us their invaluable feedback).</p>
+<h2>Compatibility</h2>
+<p>This is not a stable version of Kotlin, and <strong>no compatibility guarantees</strong> are given here: in the future previews of 1.1, syntax, APIs, command-line switches and anything else may be changed. If you need a stable version of Kotlin, please stay on 1.0.X until further notice.</p>
+<h2>Feedback</h2>
+<p>The upside of this temporary lack of guarantees is that we can make immediate use of all the feedback you provide us! The best way to tell us what you think is through <a href="https://github.com/Kotlin/KEEP">KEEP</a>: please leave your comments on the issues associated with proposals mentioned below. The implementations in Kotlin 1.1 M01 are prototypes of the functionality described in the KEEPs.</p>
+<h2>Overview</h2>
+<p>The full changelog for 1.1 M01 is available <a href="https://github.com/JetBrains/kotlin/blob/1.1-M1/ChangeLog.md#11-m01-eap-1">here</a>.<span id="more-4080"></span></p>
+<h2>Coroutines</h2>
+<p>We all know that blocking is bad under a high load, that polling is a no-go, and the world is becoming more and more push-based and asynchronous. Many languages (starting with C# in 2012) support asynchronous programming through dedicated language constructs such as <code>async</code>/<code>await</code> keywords. In Kotlin, we generalized this concept so that libraries can define their own versions of such constructs, and <code>async</code> is not a keyword, but simply a function.</p>
+<p>This design allows for integration of different asynchronous APIs: futures/promises, callback-passing, etc. It is also general enough to express lazy generators (<code>yield</code>) and cover some other use cases.</p>
+<p>So, meet one of the bigger features of Kotlin 1.1: <em>coroutines</em>. This is a traditional CS term for “program components that generalize subroutines for nonpreemptive multitasking”, but we&#8217;ll not dive into theory here <img src="https://i2.wp.com/blog.jetbrains.com/kotlin/wp-includes/images/smilies/simple-smile.png?w=640&#038;ssl=1" alt=":)" class="wp-smiley" style="height: 1em; max-height: 1em;" data-recalc-dims="1" /></p>
+<p></p><pre class="crayon-plain-tag">fun main(args: Array&lt;String&gt;) {
+    val future = async&lt;String&gt; {
+        (1..5).map {
+            await(startLongAsyncOperation(it)) // suspend while the long method is running
+        }.joinToString("\n")
+    }
+
+    println(future.get())
+}</pre><p></p>
+<p>The great thing about coroutines is that they can <em>suspend</em> without blocking a thread, and yet they look like normal sequential code. Please see a <a href="https://github.com/Kotlin/kotlin-coroutines/blob/master/kotlin-coroutines-informal.md">detailed description</a> and examples in a dedicated <a href="https://github.com/Kotlin/kotlin-coroutines">KEEP repository</a> and comment on the <a href="https://github.com/Kotlin/kotlin-coroutines/issues">issues there</a>.</p>
+<p>We are prototyping coroutine-based libraries <a href="https://github.com/Kotlin/kotlinx.coroutines">here</a>, to be later included with the Standard Library. This includes JDK&#8217;s <code>CompletableFuture</code>, asynchronous IO (NIO), RxJava, and off-loading tasks from the UI thread in Swing. The repo contains examples as well as the libraries themselves. To play with it, follow the instructions in the <a href="https://github.com/Kotlin/kotlinx.coroutines/blob/master/README.md">readme file</a>.</p>
+<h2>Type aliases</h2>
+<p>In Kotlin 1.1 we can write</p>
+<p></p><pre class="crayon-plain-tag">typealias Action&lt;T&gt; = (T) -&gt; Unit</pre><p></p>
+<p>This means that we can use <code>Action&lt;T&gt;</code> interchangeably with <code>(T) -&gt; Unit</code>, i.e. it is a true <strong>alias</strong>. Type aliases are useful for abbreviating longer types that are used in multiple places in the code:</p>
+<ul>
+<li>function types with complex signatures: <code>UserAction = (User, Context) -&gt; ActionResponse</code>,</li>
+<li>complex generic types: <code>Multimap&lt;K, V&gt; = Map&lt;K, List&lt;V&gt;&gt;</code></li>
+</ul>
+<p>In anticipation of your questions: this feature does not cover the use cases where the aliased type is not assignable to the original type (something similar to newtype in Haskell): e.g. if we try to implement units of measurement and say</p>
+<p></p><pre class="crayon-plain-tag">typealias Length = Double
+typealias Weight = Double</pre><p></p>
+<p>it won&#8217;t do us much good, because <code>Length</code> can be freely assigned to <code>Weight</code> and vice versa. In fact, they can both be assigned to and from a regular <code>Double</code>. We understand the importance of such use cases, and are planning to cover them in the future, most likely through <em>value classes</em>, but that&#8217;s another story. For now we only have type aliases.</p>
+<p>Read more and comment <a href="https://github.com/Kotlin/KEEP/issues/4">here</a>.</p>
+<h2>Bound callable references</h2>
+<p>In Kotlin 1.0 one can obtain a reference to a function (or property) like this: <code>String::length</code>, i.e. using a name of the containing class. In 1.1 we are adding <em>bound references</em>: i.e. we&#8217;ll be able to say <code>mystr::length</code> where <code>mystr</code> is a variable (or any other expression). Such references are bound to their receiver, and thus are a special case of partial function application (that we are not supporting in the general case, at least for now).</p>
+<p>Read more and comment <a href="https://github.com/Kotlin/KEEP/issues/5">here</a>.</p>
+<h2>Local delegated properties &amp; Inline properties</h2>
+<p>Delegated properties have proven to be a very useful abstraction, now we allow them inside functions/code blocks too. For example, we can say:</p>
+<p></p><pre class="crayon-plain-tag">fun example(foo: (Bar) -&gt; Foo, bar: Bar) {
+    val memoizedFoo by lazy { foo(bar) }
+
+    // use memoizedFoo instead of foo to get it computed at most once
+    if (someCondition &amp;&amp; memoizedFoo.isValid()) {
+        memoizedFoo.doSomething()
+    }
+}</pre><p></p>
+<p>DSLs and scripts will also benefit from this feature.</p>
+<p>Read more and comment <a href="https://github.com/Kotlin/KEEP/issues/25">here</a>.</p>
+<p>We also allow <a href="https://github.com/Kotlin/KEEP/issues/34">inlining property accessors</a> now.</p>
+<h2>Relaxed rules for sealed classes and data classes</h2>
+<p>We now lift some restrictions on data classes and sealed classes.</p>
+<p>Data classes can now be inherited from other classes. Note that automatically generated methods may override those defined in superclasses!</p>
+<p>For sealed classes we broaden the scope where their inheritors may be defined: before it was only inside the sealed class itself, now it&#8217;s anywhere in the same file.</p>
+<p>Read more and comment <a href="https://github.com/Kotlin/KEEP/issues/29">here</a> and <a href="https://github.com/Kotlin/KEEP/issues/31">here</a>.</p>
+<h2>Scripting</h2>
+<p>As you&#8217;ve probably heard, we all will soon be able to write Gradle build scripts in Kotlin which will considerably improve the IDE experience for editing such scripts and make them more reliable through static type checking. This project motivated us to work more on Kotlin scripting in general: we are developing the infrastructure to enable using Kotln scripts in the context of different tools, as well as the plain command-line support.</p>
+<p>More details in the <a href="https://github.com/Kotlin/KEEP/issues/28">proposal</a>.</p>
+<h2>Java 7/8 support</h2>
+<p>We are working on the improved support for Java 8: 1.1 fixes the issues with Stream APIs that we used to have (and mitigated with a support library), and adds support for generating default methods in Kotlin interfaces, so that Java clients can implement them seamlessly. Read and comment <a href="https://github.com/Kotlin/KEEP/issues/30">here</a>.</p>
+<p>To enable generation of version 8 class files, supply the <code>-jvm-target 1.8</code> command line switch.</p>
+<p>We are also adding new functions to the Standard Library, and as they rely on Java API version newer than 1.6, we introduce new artifacts: <code>kotlin-stdlib-jre7</code> and <code>kotlin-stdlib-jre8</code> that carry extra functionality such as <code>AutoCloseable.use()</code>, Regex named groups support and stream-related functions. Use these artifacts instead of <code>kotlin-stdlib</code> from your Maven/Gradle builds if you need the APIs they add.</p>
+<p>Read and discuss the proposals related to stdlib <a href="https://github.com/Kotlin/KEEP/labels/stdlib">here</a>.</p>
+<h2>JavaScript</h2>
+<p>We are actively working on the JavaScript back-end: all the language features available in 1.0 are covered now, and we are close to getting JavaScript (runtime) module systems integrated into the picture. Note that all this functionality is also available in Kotlin 1.0.X.</p>
+<p>Find the proposals related to JavaScript <a href="https://github.com/Kotlin/KEEP/labels/JS">here</a>.</p>
+<h2>Contributors</h2>
+<p>We are very grateful to GitHub users <a href="https://github.com/dotlin">dotlin</a>, <a href="https://github.com/Valdemar0204">Valdemar0204</a>, <a href="https://github.com/ensirius">ensirius</a> and <a href="https://github.com/geoand">geoand</a> for their contributions to this version!</p>
+<h2>How to try it</h2>
+<p><strong>In Maven/Gradle</strong>. Add <a href="https://bintray.com/kotlin/kotlin-eap-1.1">https://bintray.com/kotlin/kotlin-eap-1.1</a> (see instructions under <em>“Set me up!”</em>) as a repository to your project. Use version 1.1-M01 for your Kotlin artifacts.</p>
+<p><strong>In the IDE</strong>. If you are running <a href="https://blog.jetbrains.com/kotlin/2016/06/kotlin-1-0-3-is-here/">Kotlin 1.0.3</a>, go to <em>Tools → Kotlin → Configure Kotlin Plugin Updates</em>, then select “Early Access Preview 1.1” in the <em>Update channel</em> drop-down list:</p>
+<p><img src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2016/07/Configure-Plugin-Updates.png?w=400&#038;ssl=1" alt="Configure-Plugin-Updates" class="aligncenter size-small wp-image-4085" data-recalc-dims="1" /></p>
+<p>Press <em>Check for updates</em> in the same dialog, and, when the new version is show, <em>Install</em>.</p>
+<p><strong>On <a href="http://try.kotlinlang.org/">try.kotlinlang.org</a></strong>. Use the drop-down list at the bottom-right corner to change the compiler version:<br />
+<img src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2016/07/Screen-Shot-2016-07-14-at-20.23.48.png?resize=640%2C549&#038;ssl=1" alt="Screen Shot 2016-07-14 at 20.23.48" class="alignnone size-full wp-image-4121" data-recalc-dims="1" /></p>
+<p><strong>With SDKMan</strong>. Run <code>sdk install kotlin 1.1-M01</code>.</p>
+<p>Your feedback is very welcome, as always.</p>
+<h3>Have a nice Kotlin!</h3>
+<img src="http://feeds.feedburner.com/~r/kotlin/~4/nqFzPzu71v4" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>https://blog.jetbrains.com/kotlin/2016/07/first-glimpse-of-kotlin-1-1-coroutines-type-aliases-and-more/feed/</wfw:commentRss>
+		<slash:comments>42</slash:comments>
+		<feedburner:origLink>https://blog.jetbrains.com/kotlin/2016/07/first-glimpse-of-kotlin-1-1-coroutines-type-aliases-and-more/</feedburner:origLink></item>
+		<item>
+		<title>Kotlin 1.0.3 Is Here!</title>
+		<link>http://feedproxy.google.com/~r/kotlin/~3/zdsFGwHLE18/</link>
+		<comments>https://blog.jetbrains.com/kotlin/2016/06/kotlin-1-0-3-is-here/#comments</comments>
+		<pubDate>Thu, 30 Jun 2016 14:52:44 +0000</pubDate>
+		<dc:creator><![CDATA[Roman Belov]]></dc:creator>
+				<category><![CDATA[Releases]]></category>
+
+		<guid isPermaLink="false">http://blog.jetbrains.com/kotlin/?p=4042</guid>
+		<description><![CDATA[We are delighted to present Kotlin 1.0.3. This update is not full of brand new and shiny features, it is more about bug fixes, tooling improvements and performance boosts. That’s why you’ll like it 😉 Take a look at the &#8230; <a href="https://blog.jetbrains.com/kotlin/2016/06/kotlin-1-0-3-is-here/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>We are delighted to present <strong>Kotlin 1.0.3</strong>. This update is not full of brand new and shiny features, it is more about bug fixes, tooling improvements and performance boosts. That’s why you’ll like it <img src="https://s.w.org/images/core/emoji/72x72/1f609.png" alt="&#x1f609;" class="wp-smiley" style="height: 1em; max-height: 1em;" /> Take a look at the full <a href="https://github.com/JetBrains/kotlin/blob/1.0.3/ChangeLog.md">change log</a> and issues stats by subsystem:</p>
+<p><img src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/Pasted-image-at-2016_06_28-07_25-PM.png" alt="Kotlin 1.0.3. Fixed issues" width="800" class="alignnone size-full wp-image-4043" /><br />
+<span id="more-4042"></span><br />
+Specifically we want to express our gratitude to our contributors whose commits are included in 1.0.3 namely <a href="https://github.com/yarulan">Yaroslav Ulanovych</a>, <a href="https://github.com/JakeWharton">Jake Wharton</a> and <a href="https://github.com/cypressious">Kirill Rakhman</a>. Kirill has done more than a dozen improvements to formatter and submitted 20+ commits — great job, Kirill, we really appreciate it. Here we also want to thank each and every one of our EAP users who tested and provided their priceless feedback on 1.0.3 prerelease builds.</p>
+<p>Although this update is not feature-rich, there are several important improvements and features which are worth highlighting here:</p>
+<h2>What&#8217;s new in the compiler:</h2>
+<ul>
+<li>New option <code>-jdk-home</code> to specify the JDK against which the code is compiled</li>
+<li>Options to specify Kotlin language version (<code>-language-version</code>) and target Java version (<code>-jvm-target</code>) (will have effect in 1.1, added now for forward compatibility)</li>
+<li>More efficient bytecode (no more iterator in <code>indices</code> loop, avoid unnecessary operations with <code>Unit</code>)</li>
+<li>Various improvements to diagnostic messages</li>
+</ul>
+<h2>What&#8217;s new in the IDE:</h2>
+<ul>
+<li>Autosuggestion for Java to Kotlin conversion for Java code copied from browser and other sources outside of the IDE<br />
+<img class="size-full"
+src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/copypaste.png"
+onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/copypaste.gif';"
+onmouseout="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/copypaste.png';"></p>
+</li>
+<li>
+<p>Language injection for strings passed to parameters annotated with @Language. Also predefined Java injections applied in Kotlin code. Read more about using language injections in the <a href="https://www.jetbrains.com/help/idea/2016.1/using-language-injections.html">documentation</a><br />
+<img class="size-full"
+src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/inject.png"
+onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/inject.gif';"
+onmouseout="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/inject.png';"></p>
+</li>
+<li>
+<p>Completion now always shows non-imported classes and methods and adds imports automatically when they are selected<br />
+<img class="size-full"
+src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/import-1.png"
+onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/import-1.gif';"
+onmouseout="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/import-1.png';"></p>
+</li>
+<li>
+<p>Smart completion works after &#8216;by&#8217; and &#8216;in&#8217;<br />
+<img class="size-full"
+src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/smart.png"
+onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/smart.gif';"
+onmouseout="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/smart.png';"></p>
+</li>
+<li>
+<p>Move Element Left/Right actions work for Kotlin<br />
+<img class="size-full"
+src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/move.png"
+onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/move.gif';"
+onmouseout="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/move.png';"></p>
+</li>
+<li>
+<p><em>Decompile</em> button is now available in Kotlin bytecode toolwindow and for .class files compiled with Kotlin<br />
+<img src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/decompile.png" alt="decompile" width="800" class="alignnone size-full wp-image-4071" /></p>
+</li>
+<li>
+<p>Now you can navigate from stacktrace to the call site of an inline function</p>
+</li>
+<li>Inspections and intentions to check and adjust Kotlin configuration in pom.xml files</li>
+<li>Various Spring support improvements</li>
+</ul>
+<h2>How to update</h2>
+<p>To update the plugin, use Tools | Kotlin | Configure Kotlin Plugin Updates and press the &#8220;Check for updates now&#8221; button. Also, don&#8217;t forget to update the compiler and standard library version in your Maven and Gradle build scripts.</p>
+<p>As usual, if you run into any problems with the new release, you’re welcome to ask for help on the <a href="https://discuss.kotlinlang.org/">forums</a>, on Slack (get an invite <a href="http://kotlinslackin.herokuapp.com/">here</a>), or to report issues in the <a href="https://youtrack.jetbrains.com/issues/KT">issue tracker</a>.</p>
+<p>Let&#8217;s Kotlin!</p>
+<img src="http://feeds.feedburner.com/~r/kotlin/~4/zdsFGwHLE18" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>https://blog.jetbrains.com/kotlin/2016/06/kotlin-1-0-3-is-here/feed/</wfw:commentRss>
+		<slash:comments>9</slash:comments>
+		<feedburner:origLink>https://blog.jetbrains.com/kotlin/2016/06/kotlin-1-0-3-is-here/</feedburner:origLink></item>
+		<item>
+		<title>Kotlin Night in San Francisco Recordings</title>
+		<link>http://feedproxy.google.com/~r/kotlin/~3/XlX5heimdDI/</link>
+		<pubDate>Tue, 14 Jun 2016 15:32:19 +0000</pubDate>
+		<dc:creator><![CDATA[Roman Belov]]></dc:creator>
+				<category><![CDATA[Events]]></category>
+
+		<guid isPermaLink="false">http://blog.jetbrains.com/kotlin/?p=3958</guid>
+		<description><![CDATA[On May 17th we held an evening event at San Francisco in cooperation with Realm and Netflix. Thanks to everyone who joined us this evening! There were great talks and important announcements, and the good news is that all of &#8230; <a href="https://blog.jetbrains.com/kotlin/2016/06/kotlin-night-recordings/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>On May 17th we held an evening event at San Francisco in cooperation with Realm and Netflix. Thanks to everyone who joined us this evening! There were great talks and important announcements, and the good news is that all of them were recorded:</p>
+<p><span id="more-3958"></span></p>
+<h2>Talk #1: Andrey Breslav. <strong>Where We Stand and What&#8217;s Next</strong></h2>
+<p>Kotlin project lead Andrey Breslav gave an overview of what Kotlin is today and took a peek into the near future: what the Kotlin team is planning for the next release.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/POZmfjRHdfE" frameborder="0" allowfullscreen></iframe></p>
+<p><script async class="speakerdeck-embed" data-id="f1dea41f659a4c70a6e8fb20291b871b" data-ratio="1.77777777777778" width="400px" src="//speakerdeck.com/assets/embed.js"></script></p>
+<h2>Bonus Talk by Hans Dockter. <strong>Gradle goes Kotlin</strong></h2>
+<p>Hans Dockter, CEO of Gradle demoed the first milestone of writing a Gradle build script using Kotlin.</p>
+<p><iframe width="800" height="225" src="https://www.youtube.com/embed/4gmanjWNZ8E" frameborder="0" allowfullscreen></iframe></p>
+<h2>Talk #2: Jake Wharton. <strong>Instrumentation Testing Robots</strong></h2>
+<p>Libraries like Espresso allow UI tests to have stable interactions with your app, but without discipline these tests can become hard to manage and require frequent updating. In this talk Jake covered how the so-called robot pattern allows you to create stable, readable, and maintainable tests with the aid of Kotlin’s language features.</p>
+<p>See the full recording along with transcribing on <a href="https://realm.io/news/kau-jake-wharton-testing-robots/">realm.io</a></p>
+<h2>Talk #3: Laura Kogler &amp; Rob Fletcher. <strong>Kotlin Testing</strong></h2>
+<p>Spek framework contributor Laura and Spock maintainer Rob demonstrated the current state of Kotlin testing frameworks and discussed expected further advancements in testing support.</p>
+<p>Part1:</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/pCg3P7AOtHo" frameborder="0" allowfullscreen></iframe></p>
+<p><script async class="speakerdeck-embed" data-id="4bfe84ca3f6f45979f2bd1d67fb2d12b" data-ratio="1.77777777777778" src="//speakerdeck.com/assets/embed.js"></script></p>
+<p>Part2:</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/y5U8uiI2S0I" frameborder="0" allowfullscreen></iframe></p>
+<p><iframe src="//www.slideshare.net/slideshow/embed_code/key/9ZqOCfx8zmnOXZ" width="800" height="488" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:1px solid #CCC; border-width:1px; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe></p>
+<p>Thanks all participants and speakers for great atmosphere and engaging discussions. Here are several photos from the event:<br />
+<img style="float:left" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2016/06/IMG_0109-1.jpg?resize=370%2C278&#038;ssl=1" alt="Swag" data-recalc-dims="1" /><img style="float:left" src="https://i2.wp.com/blog.jetbrains.com/kotlin/files/2016/06/IMG_0114-1.jpg?resize=370%2C278&#038;ssl=1" alt="Community" data-recalc-dims="1" /><img style="float:left" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2016/06/IMG_0129-1.jpg?resize=370%2C278&#038;ssl=1" alt="Hans" data-recalc-dims="1" /><img style="float:left" src="https://i1.wp.com/blog.jetbrains.com/kotlin/files/2016/06/IMG_0150-1.jpg?resize=370%2C278&#038;ssl=1" alt="Kotlin&#038;Gradle" data-recalc-dims="1" /><br />
+<span style="white-space:nowrap"><br />
+<b>See you on next K•NIGHT!</b><br />
+</span></p>
+<img src="http://feeds.feedburner.com/~r/kotlin/~4/XlX5heimdDI" height="1" width="1" alt=""/>]]></content:encoded>
+			<feedburner:origLink>https://blog.jetbrains.com/kotlin/2016/06/kotlin-night-recordings/</feedburner:origLink></item>
+		<item>
+		<title>Meet the Kotlin Team at Gradle Summit</title>
+		<link>http://feedproxy.google.com/~r/kotlin/~3/jwBFhfrdVM4/</link>
+		<pubDate>Mon, 13 Jun 2016 09:28:35 +0000</pubDate>
+		<dc:creator><![CDATA[Dmitry Jemerov]]></dc:creator>
+				<category><![CDATA[Events]]></category>
+
+		<guid isPermaLink="false">http://blog.jetbrains.com/kotlin/?p=3952</guid>
+		<description><![CDATA[You&#8217;ve probably heard the news announcing that you&#8217;ll soon be able to write your Gradle build scripts and plugins in Kotlin. At the Kotlin Night in San Francisco, Hans Dockter from Gradle demoed the first prototype of the support. After &#8230; <a href="https://blog.jetbrains.com/kotlin/2016/06/meet-the-kotlin-team-at-gradle-summit/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>You&#8217;ve probably heard the news announcing that you&#8217;ll soon be able to <a href="https://blog.jetbrains.com/kotlin/2016/05/gradle-meets-kotlin/">write your Gradle build scripts and plugins in Kotlin</a>. At the Kotlin Night in San Francisco, Hans Dockter from Gradle demoed the first prototype of the support. After the initial announcement, we&#8217;ve continued our work together with the Gradle team to flesh out the prototype and bring it closer to the release. And next week, at the <a href="https://gradlesummit.com/">Gradle Summit in Palo Alto</a>, we&#8217;ll be sharing the details on our progress.</p>
+<p>In addition to presentations by Gradle developers and users, you&#8217;ll see <a href="https://gradlesummit.com/schedule/kotlin">the keynote by Dmitry Jemerov from the Kotlin team</a>, talking about the DSL support features of Kotlin and their use in the Gradle build script DSL. And in the expo area, you&#8217;ll be able to chat with developers working on Kotlin, IntelliJ IDEA and TeamCity, who will help you with any questions related to the use of Gradle together with JetBrains products.</p>
+<p>The summit will be on June 23-24th in Palo Alto, California, and <a href="https://info.gradlesummit.com/conference/palo_alto/2016/06/register">the registration is open</a>. Looking forward to seeing you there!</p>
+<img src="http://feeds.feedburner.com/~r/kotlin/~4/jwBFhfrdVM4" height="1" width="1" alt=""/>]]></content:encoded>
+			<feedburner:origLink>https://blog.jetbrains.com/kotlin/2016/06/meet-the-kotlin-team-at-gradle-summit/</feedburner:origLink></item>
+		<item>
+		<title>Kotlin Eclipse Plugin 0.7 Is Here!</title>
+		<link>http://feedproxy.google.com/~r/kotlin/~3/4uvAIOQ8_pk/</link>
+		<comments>https://blog.jetbrains.com/kotlin/2016/06/kotlin-eclipse-plugin-0-7-is-here/#comments</comments>
+		<pubDate>Fri, 03 Jun 2016 13:48:14 +0000</pubDate>
+		<dc:creator><![CDATA[Nikolay Krasko]]></dc:creator>
+				<category><![CDATA[Tools]]></category>
+
+		<guid isPermaLink="false">http://blog.jetbrains.com/kotlin/?p=3901</guid>
+		<description><![CDATA[We are happy to present a new release of our plugin for Eclipse IDE. Along with the support for Kotlin 1.0.2 compiler, this update brings very important features and improvements. The code formatting feature was rebuilt in this release. Instead &#8230; <a href="https://blog.jetbrains.com/kotlin/2016/06/kotlin-eclipse-plugin-0-7-is-here/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>We are happy to present a new release of our plugin for Eclipse IDE. Along with the support for Kotlin <strong>1.0.2</strong> compiler, this update brings very important features and improvements.</p>
+<p><span id="more-3901"></span></p>
+<p>The code formatting feature was rebuilt in this release. Instead of our first naive implementation we have mostly managed to port the advanced formatter from the Kotlin IntelliJ Idea plugin into Eclipse. This means that <a href="https://youtrack.jetbrains.com/issues/KT?q=Formatter%20State:%20Fixed%20Subsystems:%20IDE">a lot of fixes</a> are already there and upcoming improvements will be picked up automatically!</p>
+<p><img class="size-full"
+src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/fromater.png"
+onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/fromater.gif';"
+onmouseout="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/fromater.png';"></p>
+<p>New line auto-indent also benefitted from this code reuse and now shows far more predictable and smart behaviour.</p>
+<p>It was possible to add missing classes imports one-by-one with a quick-fix since 0.1.0 version, and now we&#8217;ve improved on that by introducing the <em>Organize Imports</em> feature. It will clean unused imports, add missing imports for classes used in the file and resort them.</p>
+<p><img width="800"  class="size-full"
+src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/organize.png"
+onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/organize.gif';"
+onmouseout="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/organize.png';"></p>
+<p>Our completion got several fixes in prioritizing variants and is now far more usable. Also not-imported classes are now suggested in completion popup at once and will be inserted together with the corresponding import.</p>
+<p><img width="800"  class="size-full"
+src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/import.png"
+onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/import.gif';"
+onmouseout="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/import.png';"></p>
+<p>Several quick-fixes about missing or illegal modifiers were added:</p>
+<ul>
+<li>It’s now possible to add an open modifier to a declaration which is overridden or subclassed.<br />
+<img width="800"  class="size-full"
+src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/open.png"
+onmouseover="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/open.gif';"
+onmouseout="this.src='https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/open.png';"></p>
+</li>
+<li>
+<p>It’s now easy to deal with the <em>&#8220;class must be declared abstract&#8221;</em> compiler error.<br />
+<img width="800"  class="size-full"
+src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/abstract.png"></p>
+</li>
+<li>
+<p>Invalid modifier removing is now also available from the quick-fix popup.<br />
+<img width="800"  class="size-full"
+src="https://d3nmt5vlzunoa1.cloudfront.net/kotlin/files/2016/06/modifiers.png"></p>
+</li>
+</ul>
+<p>Please give it a try.</p>
+<p><a href="http://marketplace.eclipse.org/marketplace-client-intro?mpc_install=2257536" class="drag" title="Drag to your running Eclipse workspace to install Kotlin Plugin for Eclipse"><img src="https://i2.wp.com/marketplace.eclipse.org/sites/all/themes/solstice/_themes/solstice_marketplace/public/images/btn-install.png?w=640&#038;ssl=1" alt="Drag to your running Eclipse workspace to install Kotlin Plugin for Eclipse" data-recalc-dims="1" /></a></p>
+<p>If you run into any problems or encounter missing features, please don&#8217;t hesitate to leave your feedback here or file issues in YouTrack.</p>
+<img src="http://feeds.feedburner.com/~r/kotlin/~4/4uvAIOQ8_pk" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>https://blog.jetbrains.com/kotlin/2016/06/kotlin-eclipse-plugin-0-7-is-here/feed/</wfw:commentRss>
+		<slash:comments>2</slash:comments>
+		<feedburner:origLink>https://blog.jetbrains.com/kotlin/2016/06/kotlin-eclipse-plugin-0-7-is-here/</feedburner:origLink></item>
+		<item>
+		<title>Gradle Meets Kotlin</title>
+		<link>http://feedproxy.google.com/~r/kotlin/~3/BfFqdqjYNhU/</link>
+		<comments>https://blog.jetbrains.com/kotlin/2016/05/gradle-meets-kotlin/#comments</comments>
+		<pubDate>Wed, 18 May 2016 02:18:25 +0000</pubDate>
+		<dc:creator><![CDATA[Hadi Hariri]]></dc:creator>
+				<category><![CDATA[Events]]></category>
+
+		<guid isPermaLink="false">http://blog.jetbrains.com/kotlin/?p=3879</guid>
+		<description><![CDATA[Back at JavaOne 2015, during a lunch break we started chatting with Hans Dockter, CEO of Gradle. A couple of days after the conference, a few of us were at the Gradle offices talking about what would be the beginning &#8230; <a href="https://blog.jetbrains.com/kotlin/2016/05/gradle-meets-kotlin/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>Back at <strong>JavaOne 2015</strong>, during a lunch break we started chatting with <strong>Hans Dockter, CEO of Gradle</strong>. A couple of days after the conference, a few of us were at the Gradle offices talking about what would be the beginning of the collaboration between JetBrains and Gradle; to bring first-class tooling and support for a static language to Gradle.</p>
+<p>Today, at the <a href="http://info.jetbrains.com/Kotlin-Night-2016.html">Kotlin Night in San Francisco</span></a>, Hans Dockter demoed the first milestone of writing a Gradle build script using Kotlin.</p>
+<p><iframe width="800" height="450" src="https://www.youtube.com/embed/4gmanjWNZ8E?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe></p>
+<p></p><pre class="crayon-plain-tag">import org.gradle.api.plugins.*
+import org.gradle.api.tasks.wrapper.*
+import org.gradle.script.lang.kotlin.*
+
+apply&lt;ApplicationPlugin&gt;()
+
+configure&lt;ApplicationPluginConvention&gt; {
+    mainClassName = "samples.HelloWorld"
+}
+
+repositories {
+    jcenter()
+}
+
+dependencies {
+    "testCompile"("junit:junit:4.12")
+}</pre><p></p>
+<p>Gradle allows developers and build engineers to deal with complex build automation scripts. As complexity grows, having a language that is statically-typed can help detect potential misconfigurations at compile time, contributing in reducing runtime issues. Static typing also opens up the door to more sophisticated tooling. All this, combined with key characteristics of Kotlin that enable easy creation of DSL’s, can provide Gradle users benefits while maintaining the level of fluency they are accustomed to.</p>
+<p>For the past 6 months, we’ve been working closely with the Gradle team, in particular with Chris Beams and Rodrigo de Oliveira in bringing Kotlin to Gradle. It has been a tremendously rewarding experience because it has also helped us see use-case scenarios for making scripting in Kotlin a first-class citizen.</p>
+<p>We are very excited for what Gradle has in store and are happy to continue collaborating with them closely in bringing a great experience to Gradle users.</p>
+<p>For more information and how to get the bits to start playing with this, make sure you read the<a href="http://gradle.org/blog/kotlin-meets-gradle"> blog post by the Gradle team </a>for more details. In addition, if you are on the public <a href="https://kotlinlang.slack.com"><span style="font-weight: 400;">Kotlin Slack</span></a><span style="font-weight: 400;">, there’s a newly created </span><b>#gradle</b><span style="font-weight: 400;"> channel for discussions.</span></p>
+<img src="http://feeds.feedburner.com/~r/kotlin/~4/BfFqdqjYNhU" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>https://blog.jetbrains.com/kotlin/2016/05/gradle-meets-kotlin/feed/</wfw:commentRss>
+		<slash:comments>14</slash:comments>
+		<feedburner:origLink>https://blog.jetbrains.com/kotlin/2016/05/gradle-meets-kotlin/</feedburner:origLink></item>
+		<item>
+		<title>Kotlin 1.0.2 is Here</title>
+		<link>http://feedproxy.google.com/~r/kotlin/~3/zTzcFnPu0rk/</link>
+		<comments>https://blog.jetbrains.com/kotlin/2016/05/kotlin-1-0-2-is-here/#comments</comments>
+		<pubDate>Fri, 13 May 2016 09:36:08 +0000</pubDate>
+		<dc:creator><![CDATA[Dmitry Jemerov]]></dc:creator>
+				<category><![CDATA[Releases]]></category>
+
+		<guid isPermaLink="false">http://blog.jetbrains.com/kotlin/?p=3865</guid>
+		<description><![CDATA[We’re happy to announce the release of Kotlin 1.0.2, the second bugfix and tooling update for Kotlin. In addition to compiler and language bugfixes, Kotlin 1.0.2 adds a number of major features to the IDE and the build tools. Incremental &#8230; <a href="https://blog.jetbrains.com/kotlin/2016/05/kotlin-1-0-2-is-here/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>We’re happy to announce the release of Kotlin 1.0.2, the second bugfix and tooling update for Kotlin. In addition to compiler and language bugfixes, Kotlin 1.0.2 adds a number of major features to the IDE and the build tools.</p>
+<h3>Incremental Compilation in Gradle and the IDE</h3>
+<p>The new release continues our work on Kotlin incremental compilation support, speeding up the turnaround time during development. Incremental compilation in the IDE (which was previously marked as experimental) is now enabled by default. Also, the long-awaited support for <b>incremental compilation in Gradle builds</b> is now there.</p>
+<p>To enable incremental compilation for Gradle, you need to set the <b>kotlin.incremental</b> property to true (for example, by adding the line <code>kotlin.incremental=true</code> to the <code>gradle.properties</code> file in the root directory of your project).</p>
+<h3>Android Lint Checks</h3>
+<p>Kotlin 1.0.2 introduces support for <b>Android Lint checks</b> for Kotlin code, ensuring that issues like using the API not available in the Android version you’re targeting are correctly detected.</p>
+<p><span id="more-3865"></span></p>
+<p>The set of checks supported in Kotlin 1.0.2 corresponds to the checks supported in Android Studio 1.5; checks added or improved in Android Studio 2.0 will be supported in the next release of Kotlin. Also, the current version runs Lint checks for Kotlin code only inside the IDE (as part of on-the-fly code inspections, or in batch mode through Analyze | Inspect Code). Running checks from the command line will be supported in the next release.</p>
+<h3>Compact Standard Library</h3>
+<p>One other improvement relevant for Android developers is that the size of the standard library has been reduced by ~1500 methods (from approximately 6600 to 5100). Even before this change, the library was <a href="https://github.com/SidneyXu/AndroidDemoIn4Languages">smaller than those of Kotlin’s main competitors</a>, and now the situation is even better. Of course, the library is still fully binary compatible.</p>
+<h3>Java 7/8 Support Libraries</h3>
+<p>As a temporary workaround for better Java 7/8 support before full support is introduced in Kotlin 1.1, we’re now providing support libraries that expose the APIs added in Java 7 and 8 (such as the Stream API) as extension functions on Kotlin standard library classes. See the <a href="https://discuss.kotlinlang.org/t/jdk7-8-features-in-kotlin-1-0/1625">forum post</a> for instructions on using the libraries.</p>
+<h3>IntelliJ IDEA Plugin features</h3>
+<p>The IntelliJ IDEA plugin has gained a number of major new features:</p>
+<ul>
+<li>For users of Android Studio, there’s now a possibility to create a <b>new activity</b> in Kotlin;</li>
+<li>For users of IntelliJ IDEA Ultimate, there is now initial support for the <b>Spring Framework</b>, including inspections, line markers, SpEL language injection support, actions to generate dependencies, and more;</li>
+<li>A bunch of <b>inspections and quickfixes</b> have been added, such as an inspection for highlighting <code>var</code>s that can be <code>val</code>;</li>
+<li>Improvements to Gradle integration, debugger, formatter, refactorings and other areas of the plugin.</li>
+</ul>
+<h3>JavaScript support</h3>
+<p>We’ve resumed work on our JavaScript backend, and the version 1.0.2 fills in most of the remaining gaps in the language feature support when targeting JavaScript. Newly supported features include nested classes, local classes, non-local returns in local lambdas, unsafe casts and more.</p>
+<h3>Maven Archetype</h3>
+<p>We’re now providing a Maven archetype to easily create Kotlin projects. Use “New project | Maven | Create from Archetype…” in IntelliJ IDEA, or the following command line:</p>
+<p></p><pre class="crayon-plain-tag">mvn archetype:generate -Dfilter=org.jetbrains.kotlin:</pre><p></p>
+<h3>Dokka 0.9.8</h3>
+<p>Together with Kotlin 1.0.2, we’re releasing a new version of <a href="https://github.com/kotlin/dokka">Dokka</a>, the Kotlin documentation generation tool. If you’re using Dokka in your project, you need to upgrade Dokka together with Kotlin, because older Dokka versions are incompatible with Kotlin 1.0.2. New features in Dokka 0.9.8 include:</p>
+<ul>
+<li>Android Gradle plugin, for generating documentation for Android libraries and applications;</li>
+<li>Support for generating a javadoc jar file in the Maven plugin.</li>
+</ul>
+<h3>Conclusion</h3>
+<p>You can see the full list of bugfixes and changes to the compiler, standard library and the tools in the <a href="https://github.com/JetBrains/kotlin/blob/1.0.2/ChangeLog.md">changelog</a>.</p>
+<p>While working on the release, we received a lot of valuable feedback from the users of the <a href="https://discuss.kotlinlang.org/t/kotlin-1-0-2-eap/1581">Early Access Preview builds</a>. We’re really grateful to everyone who has provided feedback, and we welcome you to join the EAP program for future updates.</p>
+<p>As usual, if you run into any problems with the new release, you’re welcome to ask for help on the <a href="https://discuss.kotlinlang.org/">forums</a>, on Slack (get an invite <a href="http://kotlinslackin.herokuapp.com/">here</a>), or to report issues in the <a href="https://youtrack.jetbrains.com/issues/KT">issue tracker</a>.</p>
+<img src="http://feeds.feedburner.com/~r/kotlin/~4/zTzcFnPu0rk" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>https://blog.jetbrains.com/kotlin/2016/05/kotlin-1-0-2-is-here/feed/</wfw:commentRss>
+		<slash:comments>23</slash:comments>
+		<feedburner:origLink>https://blog.jetbrains.com/kotlin/2016/05/kotlin-1-0-2-is-here/</feedburner:origLink></item>
+		<item>
+		<title>Kotlin Post-1.0 Roadmap</title>
+		<link>http://feedproxy.google.com/~r/kotlin/~3/DfPYKNWVZq8/</link>
+		<comments>https://blog.jetbrains.com/kotlin/2016/04/kotlin-post-1-0-roadmap/#comments</comments>
+		<pubDate>Thu, 14 Apr 2016 12:34:10 +0000</pubDate>
+		<dc:creator><![CDATA[Dmitry Jemerov]]></dc:creator>
+				<category><![CDATA[Roadmap]]></category>
+
+		<guid isPermaLink="false">http://blog.jetbrains.com/kotlin/?p=3844</guid>
+		<description><![CDATA[It’s been almost two months since Kotlin 1.0 was released, and the team is now switching from stabilisation and bug fixes to new feature work, so it&#8217;s a great time to talk about our plans for the future. We’ve already &#8230; <a href="https://blog.jetbrains.com/kotlin/2016/04/kotlin-post-1-0-roadmap/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>It’s been almost two months since Kotlin 1.0 was released, and the team is now switching from stabilisation and bug fixes to new feature work, so it&#8217;s a great time to talk about our plans for the future.</p>
+<p>We’ve already published our <a href="http://blog.jetbrains.com/kotlin/2016/03/kotlins-android-roadmap/">Android roadmap</a>, but there are many other areas where we’re applying our efforts. Our current development is organised in two main branches:</p>
+<ul>
+<li><strong>Kotlin 1.0.x</strong> which will be a series of releases containing bug fixes, updates to tooling, IDE support and other areas which do not affect the core language. 1.0.x releases will be published on a regular basis once every several weeks.</li>
+<li><strong>Kotlin 1.1</strong> which will contain major new language features, along with all the improvements from the 1.0.x branch. This will be a feature-driven release, and we aren’t announcing any specific time frame for it.</li>
+</ul>
+<p>Let’s look at the plans for each area in more detail, starting with the big ones.<br />
+<span id="more-3844"></span></p>
+<h2>New Language Features</h2>
+<p>Before we can start talking about specific features, the <strong>big disclaimer</strong>: everything we’re talking about here is still in the design phase, and features may end up being changed dramatically or dropped entirely as we move forward with the design, implementation and feedback gathering process. So, no guarantees.</p>
+<h3>async/await/yield</h3>
+<p>The most important feature that we’re designing right now is support for <strong>coroutines</strong> (async/await/yield). By now, the async/await pattern has found its way into many different languages, including C#, Python and Dart, and we want to support this in Kotlin as well. However, that’s not the end of the story: we want to put the specific code execution semantics into the library, rather than the compiler.</p>
+<p>The compiler will take care of transforming the function used as a coroutine into a form allowing to suspend and resume its execution. The actual execution of a coroutine (the initial invocation, as well as resuming the execution after a suspension point) will be the responsibility of the support library. Therefore, the same mechanism will allow us to support many different patterns: generators (<code>yield</code>), asynchronously executed functions (<code>async</code>/<code>await</code>), Go-like channels and goroutines, as well as potentially others which haven’t even been invented yet.</p>
+<p>Note that we’re still in the process of estimating the effort needed to implement this feature, and we don’t know whether it would be reasonable to support it in the 1.1 timeframe or it would be postponed to a later release.</p>
+<h3>Other Language Features</h3>
+<p>We’ve received quite a lot of feedback from Kotlin 1.0, and we were quite happy to see that a lot of the requests were asking for the same features. We’ve chosen the ones that come up the most often, and have prioritised them for Kotlin 1.1. Those we’re reasonably sure about are:</p>
+<ul>
+<li><strong>Data class hierarchy support</strong> will remove many of the current restrictions on data class inheritance, for example, allowing you to represent an algebraic data type as a series of data classes nested in a sealed class:<br />
+<code><b>sealed class</b> C {<br />
+&nbsp;&nbsp;&nbsp;&nbsp;<b>data class</b> A(<b>val</b> x: X, <b>val</b> y: Y) : C() { ... }<br />
+}</code></li>
+<li><strong>Type aliases</strong> will allow to assign a short name to a type (for example, a function type, or a generic type with a long signature):<br />
+<code><b>typealias</b> MouseEventHandler = (MouseEvent) -> Unit</code></li>
+<li><strong>Destructuring in lambdas</strong> will allow you to easily unpack a data class instance or another object supporting the destructuring protocol when it’s passed as a parameter to a lambda:<br />
+<code>myMap.forEach { <b>(key, value)</b> -> println(key+value) }</code> </li>
+<li><strong>Bound method references</strong> will allow to create a method reference that invokes a method on a specific object instance, and doesn’t require passing it as a parameter:<br />
+<code>letters.filter("abc"::contains)</code> </li>
+<li><strong>Local delegated properties</strong> will allow you to define a local variable as a delegated property:<br />
+<code><b>fun</b> foo() { <b>val</b> x <b>by</b> lazy { … } }</code></li>
+</ul>
+<h2>Java 8/9 Support</h2>
+<p>As of version 1.0, Kotlin targets Java 6 only. This means that the generated bytecode does not make use of any features added in Java 7 or 8, and the standard library only exposes the APIs that existed in Java 6.</p>
+<p>Over the course of 1.0.x and 1.1 releases and beyond, we plan to remove these restrictions, and to give you the choice of the JVM version that you’re targeting. Java 6 is still going to be supported, but if you choose to target Java 8, we’ll make use of that. The standard library will let you use the new Java 8 APIs, such as the stream API, and the compiler will use the newer bytecode features, such as the support for default methods in interfaces. We also plan to support Project Jigsaw (the JDK 9 module system) by the time JDK 9 is released.</p>
+<h2>JavaScript Support</h2>
+<p>When we started finalizing the 1.0 release, we decided to suspend work on JavaScript support and to focus on the JVM as the main supported platform for the release. Now that 1.0 is out, we’ve resumed work on JS, and we’re moving towards our goal of letting you write the business logic of your application only once and to run it both on the backend and in the user’s browser.</p>
+<p>Our main priorities for the short term are filling in the missing language features and better integration with the overall JavaScript infrastructure (starting with support for JS module systems). We also plan to leverage the huge set of strongly-typed API definitions for most major JS libraries, which has been accumulated by the TypeScript community. We’ll provide a tool to convert those definitions into Kotlin code, letting you use the libraries from Kotlin with a fully typed API and very little effort spent on integration.</p>
+<h2>IDE Features</h2>
+<p>In the IDE space, our current priorities are as follows:</p>
+<ul>
+<li><strong>Framework support</strong>: We plan to extend the unparalleled level of Java enterprise framework support offered by IntelliJ IDEA Ultimate so that it works equally well for Kotlin. This will be a gradual process happening in parallel inside IntelliJ IDEA and inside the Kotlin plugin; the first batch of Spring support features is already available in Kotlin 1.0.2 EAP.</li>
+<li><strong>Intentions and Quickfixes:</strong>  In our view, one of the main roles of an IDE is teaching you how to use the language well and helping you get back to speed if you make a mistake, by providing code improvement suggestions and automatic quickfixes. Kotlin 1.0 already contains a nice set of tools in this area, and we’re going to expand on it in the 1.0.x and 1.1 updates. As one example, we’re building tools that can convert imperative-style loops into code written in the functional style, using functions such as map and filter.</li>
+<li><strong>Other Improvements:</strong> Other things on our roadmap include new refactorings such as Inline Method, a more robust and flexible formatter, support for diagrams for Kotlin code, and more.</li>
+</ul>
+<h2>Other Tooling Improvements</h2>
+<p>The Android roadmap post already mentioned some of the improvements that we plan to make in our tools, such as support for incremental compilation with Gradle and support for Android Lint checks. Both of these features are already available in Kotlin 1.0.2 EAP, and will receive further improvements later on.</p>
+<h2>Summary</h2>
+<p>As you can see, there are quite a lot of exciting things coming, and there’s plenty of opportunity for you to get involved. Stop by our <a href="http://kotlinslackin.herokuapp.com/">Slack chat</a>, try out the <a href="https://discuss.kotlinlang.org/c/eap">EAP builds</a>, file <a href="http://youtrack.jetbrains.com/issues/KT">issues</a> &#8211; the future of Kotlin depends on you, our users, and we’re always happy to hear anything that you have to say.</p>
+<img src="http://feeds.feedburner.com/~r/kotlin/~4/DfPYKNWVZq8" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>https://blog.jetbrains.com/kotlin/2016/04/kotlin-post-1-0-roadmap/feed/</wfw:commentRss>
+		<slash:comments>60</slash:comments>
+		<feedburner:origLink>https://blog.jetbrains.com/kotlin/2016/04/kotlin-post-1-0-roadmap/</feedburner:origLink></item>
+		<item>
+		<title>Kotlin Digest 2016.Q1</title>
+		<link>http://feedproxy.google.com/~r/kotlin/~3/6OOD3p7zZis/</link>
+		<comments>https://blog.jetbrains.com/kotlin/2016/04/kotlin-digest-2016-q1/#comments</comments>
+		<pubDate>Wed, 06 Apr 2016 15:37:20 +0000</pubDate>
+		<dc:creator><![CDATA[Roman Belov]]></dc:creator>
+				<category><![CDATA[Digest]]></category>
+
+		<guid isPermaLink="false">http://blog.jetbrains.com/kotlin/?p=3802</guid>
+		<description><![CDATA[Welcome the Kotlin Digest of Q1 2016. It was in this quarter that Kotlin 1.0 was released, and naturally the number of articles and coverage received has substantially increased. We want to thank everyone for their contributions, and highlight some &#8230; <a href="https://blog.jetbrains.com/kotlin/2016/04/kotlin-digest-2016-q1/">Continue reading <span class="meta-nav">&#8594;</span></a>]]></description>
+				<content:encoded><![CDATA[<p>Welcome the Kotlin Digest of Q1 2016. It was in this quarter that Kotlin 1.0 was released, and naturally the number of articles and coverage received has substantially increased.<br />
+We want to thank everyone for their contributions, and highlight some of the most notable articles and blog posts.</p>
+<p><center><a href="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2016/04/2016Q1Cover.png" rel="attachment wp-att-3826"><img src="https://i0.wp.com/blog.jetbrains.com/kotlin/files/2016/04/2016Q1Cover.png?resize=640%2C320&#038;ssl=1" alt="2016Q1Cover" class="alignnone size-full wp-image-3826" data-recalc-dims="1" /></a></center></p>
+<p>By the way, you can <a href="http://kotlinslackin.herokuapp.com/">join us on slack</a> and subscribe to the <em>#feed</em> channel, where we push quite a bit of interesting content as it appears.</p>
+<p><span id="more-3802"></span></p>
+<h1>General Articles</h1>
+<ul>
+<li><a href="https://dzone.com/articles/kotlin-10-is-now-available">Kotlin 1.0 Is Now Available and the Newest JVM Language Is a Breeze</a></li>
+<li>Two Q&amp;A of Kotlin&#8217;s project lead Andrey Breslav on <a href="https://dzone.com/articles/a-qa-with-andrey-breslav-on-kotlin">DZone</a> and <a href="http://www.infoq.com/news/2016/02/kotlin-10-released">InfoQ</a></li>
+<li><a href="https://opencredo.com/kotlin/">Kotlin: a new JVM language you should try</a> by <a href="https://twitter.com/rafalgancarz">Rafal Gancarz</a></li>
+<li><a href="https://www.linkedin.com/pulse/kotlin-ying-yang-programming-languages-eric-kolotyluk">Kotlin: The Ying and Yang of Programming Languages</a> by <a href="https://www.linkedin.com/in/eric-kolotyluk-7462253?trk=pulse-det-athr_prof-art_hdr">Eric Kolotyluk</a></li>
+<li><a href="https://yobriefca.se/blog/2016/02/24/kotlin-2-years-on/">Kotlin &#8211; 2 Years On</a> by <a href="https://twitter.com/kouphax">James Hughes</a></li>
+</ul>
+<h1>Android</h1>
+<ul>
+<li><a href="http://antonioleiva.com/kotlin-awesome-tricks-for-android/">Kotlin awesome tricks for Android</a> by Antonio Leiva (author of <a href="https://leanpub.com/kotlin-for-android-developers">Kotlin for Android Developers</a> book)</li>
+<li>Series of posts <a href="https://medium.com/@CodingDoug/kotlin-android-a-brass-tacks-experiment-part-1-3e5028491bcc#.d0dy6mji7">Kotlin &amp; Android: A Brass Tacks Experiment</a> by <a href="https://www.linkedin.com/in/doug-stevenson-95509b22">Doug Stevenson</a> (Developer Advocate in Google)</li>
+<li><a href="https://realm.io/news/getting-started-with-kotlin-and-anko/">Getting Started with Kotlin and Anko on Android</a> by <a href="https://twitter.com/donnfelker">Donn Felker</a> from Realm</li>
+<li><a href="https://www.linkedin.com/in/raperez">Roberto Perez</a> shared his expirience in <a href="https://medium.com/@robj.perez/creating-an-androidwear-watchface-using-kotlin-e5f725813fa9">creating an AndroidWear watchface using Kotlin</a></li>
+</ul>
+<h1>Web Development</h1>
+<ul>
+<li>Two great posts by <a href="https://twitter.com/sdeleuze">Sébastien Deleuze</a> from Spring: <a href="https://spring.io/blog/2016/02/15/developing-spring-boot-applications-with-kotlin">Developing Spring Boot applications with Kotlin</a> and <a href="https://spring.io/blog/2016/03/20/a-geospatial-messenger-with-kotlin-spring-boot-and-postgresql">A Geospatial Messenger with Kotlin, Spring Boot and PostgreSQL</a></li>
+<li>Three-part article by <a href="https://twitter.com/mikegehard">Mike Gehard</a> from Pivotal: <a href="http://engineering.pivotal.io/post/spring-boot-application-with-kotlin/">The Journey of a Spring Boot application from Java 8 to Kotlin: The Application Class</a></li>
+<li><a href="https://twitter.com/nicolas_frankel">Nicolas Frankel</a> wrote about his <a href="https://dzone.com/articles//playing-with-spring-boot-vaadin-and-kotlin">experiments with Spring Boot, Vaadin, and Kotlin</a></li>
+<li><a href="https://medium.com/@dime.kotevski/writing-a-restful-backend-using-kotlin-and-spring-boot-9f162c96e428">Writing a RESTful backend using Kotlin and Spring Boot</a> by <a href="https://twitter.com/dimitar_">Dimitar Kotevski</a></li>
+<li><a href="https://medium.com/@gz_k/rest-api-plumbing-with-kotlin-b161af052178">Rest API plumbing with kotlin</a> by <a href="https://twitter.com/gz_k">Gaëtan Zoritchak</a></li>
+</ul>
+<h1>Ecosystem</h1>
+<ul>
+<li><a href="https://dzone.com/articles/a-new-javafx-app-framework-for-kotlin-tornadofx">TornadoFX</a> — a new JavaFX app framework for Kotlin </li>
+<li><a href="http://inaka.net/blog/2016/01/25/killertask-the-solution-to-asynctask-implementation/">KillerTask</a> — a solution to AsyncTask implementation</li>
+<li><a href="http://blog.bradcampbell.nz/introducing-paperparcel/">PaperParcel</a> — a new annotation processor that automatically generates type-safe <a href="http://developer.android.com/intl/es/reference/android/os/Parcelable.html">Parcelable</a> boilerplate code for Kotlin and Java</li>
+<li><a href="http://tomstechnicalblog.blogspot.ru/2016/02/kotlin-rxjava-what-rxjava-should-be.html">Kotlin + RxJava = Functional Powerhouse</a></li>
+<li><a href="https://medium.com/@ahmedrizwan/kotlin-retrofit-rxandroid-realm-39d7be5dc9dc">Kotlin : Retrofit + RxAndroid + Realm</a></li>
+<li><a href="http://michaelevans.org/blog/2016/02/17/using-dagger-1-and-kotlin/">Using Dagger 1 and Kotlin</a></li>
+<li><a href="http://obviam.net/index.php/libgdx-and-kotlin/">Using libGDX with Kotlin</a> and <a href="http://obviam.net/index.php/libgx-and-kotlin-2d-platformer-prototyping/">creating a simple 2D platformer</a></li>
+</ul>
+<h1>Features overwiew</h1>
+<ul>
+<li><a href="http://petersommerhoff.com/dev/kotlin/kotlin-for-java-devs/">Kotlin for Java Developers: 10 Features You Will Love About Kotlin</a></li>
+<li><a href="http://blog.jooq.org/2016/03/31/10-features-i-wish-java-would-steal-from-the-kotlin-language/">10 Features I Wish Java Would Steal From the Kotlin Language</a></li>
+<li><a href="https://medium.com/@dime.kotevski/kotlin-love-at-first-line-7127befe240f#.kan4x5dyg">Kotlin — Love at first line</a></li>
+<li><a href="https://objectpartners.com/2016/02/23/an-introduction-to-kotlin/">An Introduction to Kotlin</a></li>
+<li><a href="http://www.endran.nl/blog/kotlin-super-seeding-the-language-we-love-2">Kotlin, superseding the language we love</a></li>
+<li><a href="https://medium.com/math-camp-engineering/kotlin-3e963864db9e#.4hxqlfnvn">Kotlin, the somewhat obscure modern Android-friendly programming language</a></li>
+</ul>
+<h1>Technical</h1>
+<ul>
+<li><a href="http://blog.jooq.org/2016/02/22/a-very-peculiar-but-possibly-cunning-kotlin-language-feature/">A Very Peculiar, but Possibly Cunning Kotlin Language Feature</a></li>
+<li><a href="https://blog.frankel.ch/solving-the-josephus-problem-in-kotlin">Solving the Josephus problem in Kotlin</a> &amp; <a href="https://blog.frankel.ch/feedback-jospehus-problem">update</a></li>
+<li><a href="http://blog.dennislysenko.com/2016/01/22/kotlin-easily-storing-a-list-in-sharedpreferences-with-custom-accessors/">Kotlin: Easily storing a list in SharedPreferences with Custom Accessors</a></li>
+<li><a href="http://vishnurajeevan.com/2016/02/13/Using-Kotlin-Extensions-for-Rx-ifying/">Using Kotlin Extensions for Rx-ifying</a></li>
+<li><a href="http://makingiants.com/blog/using-mockito-for-unit-tests-with-kotlin-1x/">Using Mockito for unit testing with Kotlin (1/x)</a></li>
+<li><a href="https://medium.com/@sergii/using-kotlin-for-tests-in-android-6d4a0c818776">Using Kotlin For Tests in Android</a></li>
+</ul>
+<h1>Kotlin series</h1>
+<ul>
+<li><a href="https://twitter.com/juanchosaravia">Juan Saravia</a> started his series of stories about learning Kotlin, while developing an Android App
+<ul>
+<li><a href="https://medium.com/@juanchosaravia/learn-kotlin-while-developing-an-android-app-introduction-567e21ff9664">Introduction: A few words about this</a></li>
+<li><a href="https://medium.com/@juanchosaravia/learn-kotlin-while-developing-an-android-app-part-1-e0f51fc1a8b3">Part 1: Configuring Android Studio with Kotlin</a></li>
+<li><a href="https://medium.com/@juanchosaravia/learn-kotlin-while-developing-an-android-app-part-2-e53317ffcbe9">Part 2: MainActivity.kt: Syntax, Null Safety and more…</a></li>
+<li><a href="https://medium.com/@juanchosaravia/keddit-part-3-extension-functions-android-extensions-and-more-faa7d232f232">Part 3: NewsFragment.kt: Extension Functions, Android Extensions…</a></li>
+<li><a href="https://medium.com/@juanchosaravia/keddit-part-4-recyclerview-delegate-adapters-data-classes-with-kotlin-9248f44327f7">Part 4: RecyclerView — Delegate Adapters &amp; Data Classes with Kotlin</a></li>
+<li><a href="https://medium.com/@juanchosaravia/keddit-part-5-kotlin-rxjava-rxandroid-105f95bfcd22">Part 5: Kotlin, RxJava &amp; RxAndroid</a></li>
+<li><a href="https://medium.com/@juanchosaravia/keddit-part-6-api-retrofit-kotlin-d309074af0">Part 6: API — Retrofit &amp; Kotlin</a></li>
+</ul>
+</li>
+<li>Kotlin Month series by Jacob Zimmerman
+<ul>
+<li><a href="https://programmingideaswithjake.wordpress.com/2016/02/27/kotlin-month-post-1-assorted-features/">Post 1: Assorted Features</a></li>
+<li><a href="https://programmingideaswithjake.wordpress.com/2016/03/05/kotlin-month-post-2-inheritance-and-defaults/">Post 2: Inheritance and Defaults</a></li>
+<li><a href="https://programmingideaswithjake.wordpress.com/2016/03/13/kotlin-month-post-3-safety/">Post 3: Safety</a></li>
+<li><a href="https://programmingideaswithjake.wordpress.com/2016/03/19/kotlin-month-post-4-properties/">Post 4: Properties</a></li>
+</ul>
+</li>
+<li>by <a href="https://github.com/cirorizzo">Ciro Rizzo</a>:
+<ul>
+<li><a href="http://www.cirorizzo.net/2016/01/23/kotlin-at-glance/">My Kotlin Adventure</a></li>
+<li><a href="http://www.cirorizzo.net/2016/02/03/kotlin-code/">Kotlin Coding</a></li>
+<li>Building a Kotlin project (<a href="http://www.cirorizzo.net/2016/03/04/building-a-kotlin-project/">part 1</a> and <a href="http://www.cirorizzo.net/2016/03/04/building-a-kotlin-project-2/">part 2</a>)</li>
+</ul>
+</li>
+</ul>
+<img src="http://feeds.feedburner.com/~r/kotlin/~4/6OOD3p7zZis" height="1" width="1" alt=""/>]]></content:encoded>
+			<wfw:commentRss>https://blog.jetbrains.com/kotlin/2016/04/kotlin-digest-2016-q1/feed/</wfw:commentRss>
+		<slash:comments>1</slash:comments>
+		<feedburner:origLink>https://blog.jetbrains.com/kotlin/2016/04/kotlin-digest-2016-q1/</feedburner:origLink></item>
+	</channel>
+</rss><!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: enhanced
+Content Delivery Network via Amazon Web Services: CloudFront: d3nmt5vlzunoa1.cloudfront.net
+
+ Served from: blog.jetbrains.com @ 2016-08-04 22:33:23 by W3 Total Cache -->
