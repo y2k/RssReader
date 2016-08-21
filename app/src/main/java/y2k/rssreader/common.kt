@@ -1,5 +1,6 @@
 package y2k.rssreader
 
+import android.content.Context
 import android.os.AsyncTask.THREAD_POOL_EXECUTOR
 import android.os.Handler
 import android.os.Looper
@@ -19,8 +20,8 @@ import rx.subjects.PublishSubject
 object Provider {
 
     fun getRssItems(): Observable<RssItems> = getRssItems(provideSync(), ::loadFromRepo)
-    fun provideSync(): () -> Completable = ::syncRssWithWeb.curried(provideLoadFromWeb(), ::saveToRepo)
-    fun provideLoadFromWeb(): (String) -> Single<String> = ::loadFromWebCached.curried(::loadFromWeb, ::loadDateFromRepo, ::saveDateToRepo)
+    private fun provideSync(): () -> Completable = ::syncRssWithWeb.curried(provideLoadFromWeb(), ::saveToRepo)
+    private fun provideLoadFromWeb(): (String) -> Single<String> = ::loadFromWebCached.curried(::loadFromWeb, ::loadDateFromRepo, ::saveDateToRepo)
 }
 
 fun <T1, T2, R> Function2<T1, T2, R>.curried(t1: T1, t2: T2): () -> R = { invoke(t1, t2) }
@@ -62,7 +63,8 @@ open class BaseActivity : AppCompatActivity() {
     }
 }
 
-fun <T> Observable<T>.toLiveCycleObservable(activity: BaseActivity): Observable<T> {
+fun <T> Observable<T>.toLiveCycleObservable(context: Context): Observable<T> {
+    val activity = context as BaseActivity
     val subject = BehaviorSubject.create<T>()
     var subscription: Subscription? = null
 
