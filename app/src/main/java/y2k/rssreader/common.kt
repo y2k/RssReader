@@ -7,7 +7,9 @@ import android.support.v7.app.AppCompatActivity
 import rx.Completable
 import rx.Observable
 import rx.Single
+import rx.Subscription
 import rx.subjects.AsyncSubject
+import rx.subjects.BehaviorSubject
 import rx.subjects.PublishSubject
 
 /**
@@ -58,4 +60,21 @@ open class BaseActivity : AppCompatActivity() {
         super.onPause()
         onPause.onNext(Unit)
     }
+}
+
+fun <T> Observable<T>.toLiveCycleObservable(activity: BaseActivity): Observable<T> {
+    val subject = BehaviorSubject.create<T>()
+    var subscription: Subscription? = null
+
+    activity.onResume.subscribe {
+        subscription = subscribe(
+            { subject.onNext(it) },
+            { subject.onError(it) },
+            { subject.onCompleted() })
+    }
+    activity.onPause.subscribe {
+        subscription?.unsubscribe()
+    }
+
+    return subject
 }
