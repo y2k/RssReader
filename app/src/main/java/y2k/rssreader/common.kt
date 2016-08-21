@@ -22,6 +22,10 @@ object Provider {
     fun getRssItems(): Observable<RssItems> = getRssItems(provideSync(), ::loadFromRepo)
     private fun provideSync(): () -> Completable = ::syncRssWithWeb.curried(provideLoadFromWeb(), ::saveToRepo)
     private fun provideLoadFromWeb(): (String) -> Single<String> = ::loadFromWebCached.curried(::loadFromWeb, ::loadDateFromRepo, ::saveDateToRepo)
+
+    fun selectSubscription(subscription: RssSubscription) {
+        TODO()
+    }
 }
 
 fun <T1, T2, R> Function2<T1, T2, R>.curried(t1: T1, t2: T2): () -> R = { invoke(t1, t2) }
