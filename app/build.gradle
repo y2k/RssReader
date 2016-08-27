@@ -3,7 +3,7 @@ apply plugin: 'kotlin-android'
 
 android {
     compileSdkVersion 24
-    buildToolsVersion "24.0.1"
+    buildToolsVersion "24.0.2"
 
     defaultConfig {
         applicationId "y2k.rssreader"
@@ -25,8 +25,9 @@ android {
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
-    compile 'com.android.support:appcompat-v7:24.1.1'
+    compile 'com.android.support:appcompat-v7:24.2.0'
 
+    compile 'net.sourceforge.streamsupport:streamsupport-cfuture:1.5.1'
     compile 'org.jsoup:jsoup:1.9.2'
     compile 'io.reactivex:rxjava:1.1.9'
     compile 'org.jetbrains.kotlinx:kotlinx-coroutines:0.1-alpha'
