@@ -32,7 +32,7 @@ fun getRssItems(syncRssWithWeb: () -> CompletableFuture<*>, loadFromRepo: () -> 
 fun syncRssWithWeb(loadRss: (String) -> CompletableFuture<String>, saveToRepo: (RssItems) -> Unit): CompletableFuture<*> {
     return loadRss("https://blog.jetbrains.com/feed/")
         .thenApply(::parse)
-        .doOnSuccess { saveToRepo(it) }
+        .peek { saveToRepo(it) }
 }
 
 private fun parse(rss: String): List<RssItem> {

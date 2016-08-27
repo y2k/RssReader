@@ -17,7 +17,7 @@ fun loadFromWebCached(
     val expire = Date().time - getCached(url).time
     return if (expire < 60 * 1000)
         CompletableFuture.failedFuture(IllegalStateException("Cache not expired")) // TODO:
-    else loadFromWeb(url).doOnSuccess { setCached(url, Date()) }
+    else loadFromWeb(url).peek { setCached(url, Date()) }
 }
 
 fun loadFromWeb(url: String): CompletableFuture<String> = runAsync { URL(url).readText() }

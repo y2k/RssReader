@@ -25,9 +25,7 @@ object Provider {
     }
 }
 
-fun <T> CompletableFuture<T>.doOnSuccess(f: (T) -> Unit): CompletableFuture<T> {
-    return thenApply { f(it); it }
-}
+inline fun <T> CompletableFuture<T>.peek(crossinline f: (T) -> Unit): CompletableFuture<T> = thenApply { f(it); it }
 
 fun <T1, T2, R> Function2<T1, T2, R>.curried(t1: T1, t2: T2): () -> R = { invoke(t1, t2) }
 fun <T1, T2, T3, T4, R> Function4<T1, T2, T3, T4, R>.curried(t1: T1, t2: T2, t3: T3): (T4) -> R = { invoke(t1, t2, t3, it) }
