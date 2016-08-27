@@ -1,6 +1,6 @@
 package y2k.rssreader
 
-import rx.Single
+import java8.util.concurrent.CompletableFuture
 import java.net.URL
 import java.util.*
 
@@ -9,13 +9,15 @@ import java.util.*
  */
 
 fun loadFromWebCached(
-    loadFromWeb: (String) -> Single<String>,
+    loadFromWeb: (String) -> CompletableFuture<String>,
     getCached: (String) -> Date,
     setCached: (String, Date) -> Unit,
-    url: String): Single<String> {
+    url: String): CompletableFuture<String> {
+
     val expire = Date().time - getCached(url).time
-    return if (expire < 60 * 1000) Single.error(IllegalStateException("Cache not expired")) // TODO:
+    return if (expire < 60 * 1000)
+        CompletableFuture.failedFuture(IllegalStateException("Cache not expired")) // TODO:
     else loadFromWeb(url).doOnSuccess { setCached(url, Date()) }
 }
 
-fun loadFromWeb(url: String): Single<String> = runAsync { URL(url).readText() }
+fun loadFromWeb(url: String): CompletableFuture<String> = runAsync { URL(url).readText() }

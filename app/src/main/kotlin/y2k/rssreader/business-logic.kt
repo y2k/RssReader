@@ -1,10 +1,8 @@
 package y2k.rssreader
 
+import java8.util.concurrent.CompletableFuture
 import org.jsoup.Jsoup
-import rx.Completable
 import rx.Observable
-import rx.Single
-import rx.subjects.PublishSubject
 import rx.subjects.ReplaySubject
 
 /**
@@ -15,29 +13,26 @@ fun getSubscriptions(): Observable<Subscriptions> = Observable.just(listOf(
     RssSubscription("JetBrains blog", "https://blog.jetbrains.com/feed/"),
     RssSubscription("Kotlin blog", "http://feeds.feedburner.com/kotlin")))
 
-fun getRssItems(syncRssWithWeb: () -> Completable, loadFromRepo: () -> RssItems): Observable<RssItems> {
+fun getRssItems(syncRssWithWeb: () -> CompletableFuture<*>, loadFromRepo: () -> RssItems): Observable<RssItems> {
     val subject = ReplaySubject.createWithSize<RssItems>(1)
     subject.onNext(loadFromRepo())
     syncRssWithWeb()
-        .subscribe({
-            subject.onNext(loadFromRepo())
-            subject.onCompleted()
-        }, {
-            it.printStackTrace()
-            subject.onCompleted()
-        })
+        .whenComplete { result, throwable ->
+            if (throwable == null) {
+                subject.onNext(loadFromRepo())
+                subject.onCompleted()
+            } else {
+                throwable.printStackTrace()
+                subject.onCompleted()
+            }
+        }
     return subject
 }
 
-fun syncRssWithWeb(loadRss: (String) -> Single<String>, saveToRepo: (RssItems) -> Unit): Completable {
-    val subject = PublishSubject.create<Any>()
-    loadRss("https://blog.jetbrains.com/feed/")
-        .map(::parse)
+fun syncRssWithWeb(loadRss: (String) -> CompletableFuture<String>, saveToRepo: (RssItems) -> Unit): CompletableFuture<*> {
+    return loadRss("https://blog.jetbrains.com/feed/")
+        .thenApply(::parse)
         .doOnSuccess { saveToRepo(it) }
-        .subscribe(
-            { subject.onCompleted() },
-            { subject.onError(it) })
-    return subject.toCompletable()
 }
 
 private fun parse(rss: String): List<RssItem> {

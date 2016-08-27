@@ -1,15 +1,12 @@
 package y2k.rssreader
 
 import android.content.Context
-import android.os.AsyncTask.THREAD_POOL_EXECUTOR
 import android.os.Handler
 import android.os.Looper
 import android.support.v7.app.AppCompatActivity
-import rx.Completable
+import java8.util.concurrent.CompletableFuture
 import rx.Observable
-import rx.Single
 import rx.Subscription
-import rx.subjects.AsyncSubject
 import rx.subjects.BehaviorSubject
 import rx.subjects.PublishSubject
 
@@ -20,33 +17,32 @@ import rx.subjects.PublishSubject
 object Provider {
 
     fun getRssItems(): Observable<RssItems> = getRssItems(provideSync(), ::loadFromRepo)
-    private fun provideSync(): () -> Completable = ::syncRssWithWeb.curried(provideLoadFromWeb(), ::saveToRepo)
-    private fun provideLoadFromWeb(): (String) -> Single<String> = ::loadFromWebCached.curried(::loadFromWeb, ::loadDateFromRepo, ::saveDateToRepo)
+    private fun provideSync(): () -> CompletableFuture<*> = ::syncRssWithWeb.curried(provideLoadFromWeb(), ::saveToRepo)
+    private fun provideLoadFromWeb(): (String) -> CompletableFuture<String> = ::loadFromWebCached.curried(::loadFromWeb, ::loadDateFromRepo, ::saveDateToRepo)
 
     fun selectSubscription(subscription: RssSubscription) {
         TODO()
     }
 }
 
+fun <T> CompletableFuture<T>.doOnSuccess(f: (T) -> Unit): CompletableFuture<T> {
+    return thenApply { f(it); it }
+}
+
 fun <T1, T2, R> Function2<T1, T2, R>.curried(t1: T1, t2: T2): () -> R = { invoke(t1, t2) }
 fun <T1, T2, T3, T4, R> Function4<T1, T2, T3, T4, R>.curried(t1: T1, t2: T2, t3: T3): (T4) -> R = { invoke(t1, t2, t3, it) }
 
-fun <T> runAsync(action: () -> T): Single<T> {
-    val subject = AsyncSubject.create<T>()
-    THREAD_POOL_EXECUTOR.execute {
+fun <T> runAsync(action: () -> T): CompletableFuture<T> {
+    val promise = CompletableFuture<T>()
+    CompletableFuture.supplyAsync {
         try {
             val result = action()
-            FOREGROUND_HANDLER.post {
-                subject.onNext(result)
-                subject.onCompleted()
-            }
+            FOREGROUND_HANDLER.post { promise.complete(result) }
         } catch (e: Exception) {
-            FOREGROUND_HANDLER.post {
-                subject.onError(e)
-            }
+            FOREGROUND_HANDLER.post { promise.obtrudeException(e) }
         }
     }
-    return subject.toSingle()
+    return promise
 }
 
 private val FOREGROUND_HANDLER by lazy { Handler(Looper.getMainLooper()) }
