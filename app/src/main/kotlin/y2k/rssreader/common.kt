@@ -5,6 +5,7 @@ import android.os.Handler
 import android.os.Looper
 import android.support.v7.app.AppCompatActivity
 import java8.util.concurrent.CompletableFuture
+import org.funktionale.partials.partially1
 import rx.Observable
 import rx.Subscription
 import rx.subjects.BehaviorSubject
@@ -17,8 +18,17 @@ import rx.subjects.PublishSubject
 object Provider {
 
     fun getRssItems(): Observable<RssItems> = getRssItems(provideSync(), ::loadFromRepo)
-    private fun provideSync(): () -> CompletableFuture<*> = ::syncRssWithWeb.curried(provideLoadFromWeb(), ::saveToRepo)
-    private fun provideLoadFromWeb(): (String) -> CompletableFuture<String> = ::loadFromWebCached.curried(::loadFromWeb, ::loadDateFromRepo, ::saveDateToRepo)
+
+    private fun provideSync(): () -> CompletableFuture<*> =
+        ::syncRssWithWeb
+            .partially1(provideLoadFromWeb())
+            .partially1(::saveToRepo)
+
+    private fun provideLoadFromWeb(): (String) -> CompletableFuture<String> =
+        ::loadFromWebCached
+            .partially1(::loadFromWeb)
+            .partially1(::loadDateFromRepo)
+            .partially1(::saveDateToRepo)
 
     fun selectSubscription(subscription: RssSubscription) {
         TODO()
@@ -27,8 +37,7 @@ object Provider {
 
 inline fun <T> CompletableFuture<T>.peek(crossinline f: (T) -> Unit): CompletableFuture<T> = thenApply { f(it); it }
 
-fun <T1, T2, R> Function2<T1, T2, R>.curried(t1: T1, t2: T2): () -> R = { invoke(t1, t2) }
-fun <T1, T2, T3, T4, R> Function4<T1, T2, T3, T4, R>.curried(t1: T1, t2: T2, t3: T3): (T4) -> R = { invoke(t1, t2, t3, it) }
+fun <P1, R> Function1<P1, R>.partially1(p1: P1): () -> R = { this(p1) }
 
 fun <T> runAsync(action: () -> T): CompletableFuture<T> {
     val promise = CompletableFuture<T>()

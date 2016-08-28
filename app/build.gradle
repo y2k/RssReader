@@ -23,6 +23,13 @@ android {
     }
 }
 
+repositories {
+    mavenCentral()
+    maven { url 'http://dl.bintray.com/kotlin/kotlin-eap-1.1' }
+    maven { url 'http://dl.bintray.com/kotlin/kotlinx.coroutines' }
+    maven { url 'https://oss.jfrog.org/libs-snapshot' }
+    jcenter()
+}
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
     compile 'com.android.support:appcompat-v7:24.2.0'
@@ -31,12 +38,7 @@ dependencies {
     compile 'org.jsoup:jsoup:1.9.2'
     compile 'io.reactivex:rxjava:1.1.9'
     compile 'org.jetbrains.kotlinx:kotlinx-coroutines:0.1-alpha'
+    compile 'org.funktionale:funktionale:0.9'
 
     testCompile 'junit:junit:4.12'
-}
-repositories {
-    mavenCentral()
-    maven { url 'http://dl.bintray.com/kotlin/kotlin-eap-1.1' }
-    maven { url 'http://dl.bintray.com/kotlin/kotlinx.coroutines' }
-    maven { url 'https://oss.jfrog.org/libs-snapshot' }
 }
