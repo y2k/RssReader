@@ -2,6 +2,8 @@ package y2k.rssreader
 
 import org.junit.Assert.assertEquals
 import org.junit.Test
+import rx.AsyncEmitter
+import rx.Observable
 import rx.Single
 import rx.subjects.AsyncSubject
 
@@ -10,7 +12,25 @@ import rx.subjects.AsyncSubject
  */
 class RxTests {
 
-    @Test fun test() {
+    @Test fun `fromAsync test`() {
+        var mode = 0
+        val o = Observable.fromAsync<RssItems>({ emitter ->
+            mode = 1
+            emitter.setCancellation {
+                mode = 2
+            }
+        }, AsyncEmitter.BackpressureMode.BUFFER)
+        assertEquals(0, mode)
+
+        val s = o.subscribe {
+        }
+        assertEquals(1, mode)
+
+        s.unsubscribe()
+        assertEquals(2, mode)
+    }
+
+    @Test fun `AsyncSubject test`() {
         var index = 1
         fun f(): Single<Int> {
             val s = AsyncSubject.create<Int>()
